@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+.env.local
+.vercel
+# giáo án thật dùng cho bộ kiểm (có tên giáo viên) — chỉ giữ trên máy, không đưa lên GitHub public
+tests/fixtures/*.docx
+tests/out

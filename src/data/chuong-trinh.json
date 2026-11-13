@@ -1,0 +1,121 @@
+{
+  "chuDe": "CHƯƠNG TRÌNH HỌC: CHỦ ĐỀ MỘT SỐ NGHỀ- NGÀY 20/11",
+  "weeks": [
+    {
+      "tuan": 11,
+      "nhanh": "Ngày nhà giáo Việt Nam 20/11",
+      "khoang": "(từ 16/11 đến 20/11/ 2026)",
+      "days": {
+        "2": {
+          "sang": "PTNT: KPXH: Ngày nhà giáo Việt Nam 20/11\n- Loại tiết: CCKT",
+          "chieu": "- Chơi ở các góc.\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "3": {
+          "sang": "PTNN: Văn học: Thơ: Nghe lời cô giáo\n- Loại tiết: CCKT",
+          "chieu": "- HĐVS: Soi gương, chải tóc- Loại tiết: CCKT\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "4": {
+          "sang": "PTTM: Âm nhạc: Dạy vận động: Cô giáo miền xuôi\n- Loại tiết: CCKT",
+          "chieu": "- Dạy trẻ đọc đồng dao “Tay đẹp”\n-Loại tiết: CCKT\nNêu gương - Vệ sinh - Trả trẻ"
+        },
+        "5": {
+          "sang": "PTNN: LQCC: Tập đồ chữ e, ê\n-Loại tiết: CCKT",
+          "chieu": "- Củng cố kiến thức :Ôn hát: Cô giáo miền xuôi\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "6": {
+          "sang": "PTNT: LQVT: So sánh chiều dài 3 đối tượng\n-Loại tiết: CCKT",
+          "chieu": "-Văn nghệ +Nêu gương cuối tuần\n-Vệ sinh -Trả trẻ"
+        }
+      },
+      "coA": "Từ Thị Thảo",
+      "coB": "Vũ Thị Chinh"
+    },
+    {
+      "tuan": 12,
+      "nhanh": "Nghề sản xuất",
+      "khoang": "(từ  23/11 đến 27/11/ 2026)",
+      "days": {
+        "2": {
+          "sang": "PTTC: Thể dục: Bật liên tục vào vòng\n- Loại tiết: CCKT",
+          "chieu": "- Chơi ở các góc.\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "3": {
+          "sang": "PTNN: Văn học: Truyện Hai anh em\n- Loại tiết: CCKT",
+          "chieu": "- HĐLĐ: Xếp ghế\n- Loại tiết: CCKT\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "4": {
+          "sang": "PTTM: Tạo hình: Vẽ dụng cụ nghề nông\n-Loại tiết: CCKT",
+          "chieu": "Dạy trẻ chơi trò chơi dân gian: ‘Kéo cưa lừa xẻ”\n-Loại tiết: CCKT\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "5": {
+          "sang": "PTNN: LQCC: Làm quen chữ u, ư\n-Loại tiết: CCKT",
+          "chieu": "- Củng cố kiến thức: Ôn chữ cái u, ư”\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "6": {
+          "sang": "PTNT: KPXH: Nghề nông\n-Loại tiết: CCKT",
+          "chieu": "-Văn nghệ +Nêu gương cuối tuần\n-Vệ sinh -Trả trẻ"
+        }
+      },
+      "coA": "Vũ Thị Chinh",
+      "coB": "Từ Thị Thảo"
+    },
+    {
+      "tuan": 13,
+      "nhanh": "Nghề dịch vụ",
+      "khoang": "(từ  30/11 đến  4/12 2026)",
+      "days": {
+        "2": {
+          "sang": "PTTC: Thể dục: Đi trên ván kê dốc\n- Loại tiết: CCKT",
+          "chieu": "- Chơi ở các góc.\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "3": {
+          "sang": "PTNT: KPKH: Nghề dịch vụ: nghề bán hàng\n- Loại tiết: CCKT",
+          "chieu": "- HĐVS: Rửa mặt\n- Loại tiết: CCKT\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "4": {
+          "sang": "PTTM: Âm nhạc: Dạy hát Bác đưa thư vui tính\n-Loại tiết: CCKT.",
+          "chieu": "- Dạy trẻ đọc ca dao\nRềnh rềnh ràng ràng”\n-Loại tiết: CCKT\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "5": {
+          "sang": "PTNN: LQCC: Tập đồ chữ u, ư\n-Loại tiết: CCKT",
+          "chieu": "- Củng cố kiến thức :Ôn hát: Bác đưa thư vui tính\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "6": {
+          "sang": "PTNT: LQVT: So sánh, phát hiện ra quy tắc sắp xếp và sắp xếp theo quy tắc, theo yêu cầu\n-Loại tiết: CCKT",
+          "chieu": "-Văn nghệ +Nêu gương cuối tuần\n-Vệ sinh -Trả trẻ"
+        }
+      },
+      "coA": "Từ Thị Thảo",
+      "coB": "Vũ Thị Chinh"
+    },
+    {
+      "tuan": 14,
+      "nhanh": "Nghề phục vụ cộng đồng",
+      "khoang": "(từ  7/12 đến 11/12 2026",
+      "days": {
+        "2": {
+          "sang": "PTTC: Thể dục: Lăn bóng bằng 2 tay và di chuyển theo bóng\n- Loại tiết: CCKT",
+          "chieu": "- Chơi ở các góc.\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "3": {
+          "sang": "PTNN: Văn học: Thơ: Vè nghề nghiệp\n-Loại tiết: CCKT",
+          "chieu": "- HĐLĐ: Gấp áo\n- Loại tiết: CCKT\nNêu gương-Vệ sinh -Trả trẻ"
+        },
+        "4": {
+          "sang": "PTTM: Âm nhạc: Dạy vận động: Cháu yêu cô thợ dệt\n-Loại tiết: CCKT.",
+          "chieu": "-Dạy trẻ chơi trò chơi dân gian “Chi chi chành chành”\n-Loại tiết: CCKT\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "5": {
+          "sang": "PTNT: KPXH: Nghề bác sĩ\n- Loại tiết: CCKT",
+          "chieu": "- Củng cố kiến thức: Ôn hát: Cháu yêu cô thợ dệt\n- Nêu gương - Vệ sinh - Trả trẻ"
+        },
+        "6": {
+          "sang": "PTNT: LQVT: Đo các đối tượng bằng một đơn vị đo, so sánh và diễn đạt kết quả đo\n-Loại tiết: CCKT",
+          "chieu": "-Văn nghệ +Nêu gương cuối tuần\n-Vệ sinh -Trả trẻ"
+        }
+      },
+      "coA": "Vũ Thị Chinh",
+      "coB": "Từ Thị Thảo"
+    }
+  ]
+}
