@@ -1,6 +1,6 @@
 # [slug|Tên chủ đề] rồi các dòng: loai|id-ngắn|tenVi|prompt
 [truong-mam-non|Trường mầm non]
-nen|lop-hoc|Lớp học mầm non|a bright Vietnamese kindergarten classroom interior with small tables, shelves of toys and books, windows with bunting flags, NO people
+nen|lop-hoc|Lớp học mầm non|a bright Vietnamese kindergarten classroom interior with small tables, shelves of toys and books, windows with bunting flags, NO people, and NO faces on any decoration or object (no smiling sun, no smiling clouds, no eyes on toys)
 nen|san-truong|Sân trường|a kindergarten schoolyard with a slide, swings, flowers and a green gate, NO people
 nen|trung-thu|Đêm Trung thu|a cheerful Mid-Autumn festival night scene with hanging star lanterns and a big full moon, NO people
 nhan-vat|co-giao|Cô giáo|a young Vietnamese kindergarten teacher woman in a pretty pastel blouse and long skirt, waving kindly

@@ -67,7 +67,8 @@
     "khung",
     "tiêu đề"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/chung/khung/tieu-de.png"
   },
   {
    "id": "chung/khung/noi-dung",
@@ -138,7 +139,8 @@
    "the": [
     "sao"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/chung/sao/vang.png"
   },
   {
    "id": "chung/sao/lap-lanh",
@@ -173,7 +175,8 @@
     "chuông",
     "rung chuông vàng"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/chung/chuong/vang.png"
   },
   {
    "id": "chung/chuong/rung",
@@ -197,7 +200,8 @@
     "đáp án",
     "đỏ"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/chung/o-dap-an/do.png"
   },
   {
    "id": "chung/o-dap-an/tim",
@@ -768,11 +772,13 @@
    "chuDe": "truong-mam-non",
    "loai": "nen",
    "tenVi": "Lớp học mầm non",
-   "prompt": "a bright Vietnamese kindergarten classroom interior with small tables, shelves of toys and books, windows with bunting flags, NO people",
+   "prompt": "a bright Vietnamese kindergarten classroom interior with small tables, shelves of toys and books, windows with bunting flags, NO people, and NO faces on any decoration or object (no smiling sun, no smiling clouds, no eyes on toys)",
    "the": [
     "trường mầm non"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "hong",
+   "tep": "img/truong-mam-non/nen/lop-hoc.webp",
+   "ghiChu": "mặt trời trang trí có mặt cười; đã sửa prompt, cần vẽ lại (--redo-hong)"
   },
   {
    "id": "truong-mam-non/nen/san-truong",
@@ -2070,7 +2076,8 @@
    "the": [
     "nghề nghiệp"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/nhan-vat/bac-si.png"
   },
   {
    "id": "nghe-nghiep/nhan-vat/co-giao-mam-non",
@@ -2081,7 +2088,8 @@
    "the": [
     "nghề nghiệp"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/nhan-vat/co-giao-mam-non.png"
   },
   {
    "id": "nghe-nghiep/nhan-vat/ky-su-xay-dung",
@@ -2169,7 +2177,8 @@
    "the": [
     "nghề nghiệp"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/do-vat/ong-nghe.png"
   },
   {
    "id": "nghe-nghiep/do-vat/nhiet-ke",
@@ -2213,7 +2222,8 @@
    "the": [
     "nghề nghiệp"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/do-vat/mu-bao-ho-ky-su.png"
   },
   {
    "id": "nghe-nghiep/do-vat/may-xuc",
@@ -2279,7 +2289,8 @@
    "the": [
     "nghề nghiệp"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/do-vat/chao-dau-bep.png"
   },
   {
    "id": "nghe-nghiep/do-vat/mu-dau-bep",
@@ -2312,7 +2323,8 @@
    "the": [
     "nghề nghiệp"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/do-vat/liem-non-la.png"
   },
   {
    "id": "nghe-nghiep/do-vat/cuoc",
@@ -2598,7 +2610,8 @@
    "the": [
     "động vật"
    ],
-   "trangThai": "chua-ve"
+   "trangThai": "da-ve",
+   "tep": "img/dong-vat/do-vat/khuc-xuong.png"
   },
   {
    "id": "dong-vat/do-vat/bat-an",
