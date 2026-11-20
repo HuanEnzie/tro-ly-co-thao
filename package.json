@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "tsc --noEmit",
-    "verify": "tsx scripts/verify-checker.ts && tsx scripts/verify-fixer.ts && tsx scripts/verify-ai-guard.ts && tsx scripts/verify-align.ts && tsx scripts/verify-compose.ts && tsx scripts/verify-slides.ts",
+    "verify": "tsx scripts/verify-checker.ts && tsx scripts/verify-fixer.ts && tsx scripts/verify-ai-guard.ts && tsx scripts/verify-align.ts && tsx scripts/verify-compose.ts && tsx scripts/verify-slides.ts && tsx scripts/verify-editor.ts",
     "compose": "tsx scripts/compose-week.ts",
     "check": "tsx scripts/check-file.ts",
     "import:chuong-trinh": "tsx scripts/import-chuong-trinh.ts",
@@ -16,7 +16,9 @@
     "seed:chuong-trinh": "tsx scripts/seed-chuong-trinh.ts"
   },
   "dependencies": {
+    "verify": "",
     "@supabase/supabase-js": "^2.119.2",
+    "docx-preview": "^0.4.1",
     "jszip": "^3.10.1",
     "pptxgenjs": "^4.0.1",
     "react": "^19.0.1",
