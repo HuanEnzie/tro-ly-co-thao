@@ -7,7 +7,7 @@ import JSZip from 'jszip';
 import { DICT } from './rules/spelling';
 import { L } from './text';
 
-export interface Change { before: string; after: string; context: string; rule: string }
+export interface Change { before: string; after: string; context: string; rule: string; id?: string }
 interface Edit { s: number; e: number; text: string; rule: string }
 
 const enc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -20,7 +20,38 @@ const DICT_RE = DICT.filter(([a, b]) => a !== b).map(([w, r, cs]) => ({ re: new 
 /** dòng chấm chấm để điền tay / dòng canh lề chữ ký: không sửa phần trình bày */
 const isLeader = (t: string) => /[.…_]{4,}/.test(t) || / {5,}/.test(t) || /\t/.test(t);
 
-export interface FixOptions { hdSpace?: boolean } // KH ngày: “HĐ1” -> “HĐ 1”
+/** một chỗ sửa đã lên kế hoạch (chưa áp): id ổn định theo (số thứ tự đoạn, vị trí, luật) trên cùng một file gốc */
+export interface PlannedFix {
+  id: string; para: number; s: number; e: number;
+  before: string; after: string; context: string; rule: string; group: FixGroupId | null;
+}
+
+export interface FixOptions {
+  hdSpace?: boolean;                 // KH ngày: “HĐ1” -> “HĐ 1”
+  /** chỉ sửa các luật có tên bằng hoặc bắt đầu bằng một tiền tố trong danh sách (vd "chinh-ta" hoặc "chinh-ta.tu-dien"); bỏ trống = mọi luật */
+  rules?: string[];
+  /** bỏ các chỗ có id nằm trong danh sách (id lấy từ planFixes) */
+  skipIds?: Iterable<string>;
+  /** hoặc bỏ theo hàm: trả true thì KHÔNG sửa chỗ đó */
+  skip?: (fix: PlannedFix) => boolean;
+}
+
+export type FixGroupId = 'chinh-ta' | 'go-dup' | 'dau-cau' | 'danh-so' | 'hd-so';
+export interface FixGroup { id: FixGroupId; label: string; rules: string[] }
+/** các nhóm sửa hiện cho cô tích chọn (mỗi nhóm = danh sách tiền tố tên luật) */
+export const FIX_GROUPS: FixGroup[] = [
+  { id: 'chinh-ta', label: 'Chính tả (từ điển)', rules: ['chinh-ta.tu-dien'] },
+  { id: 'go-dup', label: 'Gõ đúp, lặp chữ', rules: ['chinh-ta.go-dup', 'chinh-ta.lap-chu'] },
+  { id: 'dau-cau', label: 'Dấu câu và khoảng trắng', rules: ['trinh-bay.cach-thua', 'trinh-bay.cach-truoc-dau', 'trinh-bay.sau-hai-cham', 'trinh-bay.ngoac', 'trinh-bay.ngoac-kep', 'trinh-bay.truoc-ngoac', 'trinh-bay.hai-cham-cuoi', 'trinh-bay.ngoac-lech'] },
+  { id: 'danh-so', label: 'Đánh số, gạch đầu dòng', rules: ['trinh-bay.danh-so', 'trinh-bay.gach-dau-dong'] },
+  { id: 'hd-so', label: '“HĐ1” → “HĐ 1”', rules: ['trinh-bay.hd-so'] },
+];
+export const groupOfRule = (rule: string): FixGroupId | null => FIX_GROUPS.find(g => ruleAllowed(rule, g.rules))?.id ?? null;
+export const rulesOfGroups = (ids: Iterable<FixGroupId>): string[] => {
+  const set = new Set(ids);
+  return FIX_GROUPS.filter(g => set.has(g.id)).flatMap(g => g.rules);
+};
+const ruleAllowed = (rule: string, rules?: string[]) => !rules || rules.some(p => rule === p || rule.startsWith(`${p}.`));
 
 /** các chỗ sửa trong 1 đoạn (theo vị trí ký tự) */
 export function editsFor(raw: string, opt: FixOptions = {}): Edit[] {
@@ -83,13 +114,12 @@ function withHighlight(rPr: string): string {
   return `<w:rPr>${inner.slice(0, pos)}${hl}${inner.slice(pos)}</w:rPr>`;
 }
 
-/** sửa 1 đoạn <w:p>…</w:p>; trả XML mới + danh sách thay đổi */
-function fixParagraph(p: string, opt: FixOptions, changes: Change[]): string {
-  // các run và các nút chữ trong run
+type Seg = { run: number; tS: number; tE: number; open: string; text: string; start: number; origLen: number };
+/** các run và các nút chữ trong 1 đoạn + chữ gộp của đoạn */
+function readParagraph(p: string) {
   const runRe = /<w:r\b[^>]*>[\s\S]*?<\/w:r>/g;
   const runs: { s: number; e: number; xml: string }[] = [];
   for (const m of p.matchAll(runRe)) runs.push({ s: m.index!, e: m.index! + m[0].length, xml: m[0] });
-  type Seg = { run: number; tS: number; tE: number; open: string; text: string; start: number; origLen: number };
   const segs: Seg[] = [];
   let full = '';
   runs.forEach((r, ri) => {
@@ -99,8 +129,26 @@ function fixParagraph(p: string, opt: FixOptions, changes: Change[]): string {
       full += text;
     }
   });
+  return { runs, segs, full };
+}
+
+const ctxOf = (full: string, s: number, e: number) => full.slice(Math.max(0, s - 25), Math.min(full.length, e + 25)).trim();
+
+function planOf(full: string, para: number, opt: FixOptions) {
+  return editsFor(full, opt).filter(ed => ruleAllowed(ed.rule, opt.rules)).map(ed => ({
+    ed,
+    fix: {
+      id: `${para}:${ed.s}:${ed.rule}`, para, s: ed.s, e: ed.e, before: full.slice(ed.s, ed.e) || '·', after: ed.text || '(xoá)',
+      context: ctxOf(full, ed.s, ed.e), rule: ed.rule, group: groupOfRule(ed.rule),
+    } as PlannedFix,
+  }));
+}
+
+/** sửa 1 đoạn <w:p>…</w:p>; trả XML mới + danh sách thay đổi */
+function fixParagraph(p: string, para: number, opt: FixOptions, skipIds: Set<string>, changes: Change[]): string {
+  const { runs, segs, full } = readParagraph(p);
   if (!full.trim()) return p;
-  const edits = editsFor(full, opt);
+  const edits = planOf(full, para, opt).filter(x => !skipIds.has(x.fix.id) && !opt.skip?.(x.fix)).map(x => x.ed);
   if (!edits.length) return p;
 
   const touched = new Set<number>();
@@ -120,7 +168,7 @@ function fixParagraph(p: string, opt: FixOptions, changes: Change[]): string {
       touched.add(sg.run);
     }
     changes.push({ before: full.slice(ed.s, ed.e) || '·', after: ed.text || '(xoá)', rule: ed.rule,
-      context: full.slice(Math.max(0, ed.s - 25), Math.min(full.length, ed.e + 25)).trim() });
+      context: ctxOf(full, ed.s, ed.e), id: `${para}:${ed.s}:${ed.rule}` });
   }
   // dựng lại từng run: tại dấu mốc, đóng run hiện tại và mở run mới cùng định dạng (phần giữa thêm tô vàng)
   const newRuns = runs.map((r, ri) => {
@@ -145,14 +193,37 @@ function fixParagraph(p: string, opt: FixOptions, changes: Change[]): string {
 
 export interface FixResult { data: Uint8Array; changes: Change[] }
 
-export async function fixDocx(input: ArrayBuffer | Uint8Array, opt: FixOptions = {}): Promise<FixResult> {
+const allParas = /<w:p\b[^>]*?(?:\/>|>[\s\S]*?<\/w:p>)/g;
+
+async function loadXml(input: ArrayBuffer | Uint8Array) {
   const zip = await JSZip.loadAsync(input);
-  const changes: Change[] = [];
   const f = zip.file('word/document.xml');
   if (!f) throw new Error('Không phải file Word (.docx)');
-  const xml = await f.async('string');
+  return { zip, xml: await f.async('string') };
+}
+
+/** chạy “khô”: liệt kê mọi chỗ SẼ sửa (theo opt.rules, bỏ qua skip) mà không đụng file. Dùng id của từng chỗ để bỏ chọn khi gọi fixDocx */
+export async function planFixes(input: ArrayBuffer | Uint8Array, opt: FixOptions = {}): Promise<PlannedFix[]> {
+  const { xml } = await loadXml(input);
+  const out: PlannedFix[] = [];
+  let k = 0;
+  for (const m of xml.matchAll(allParas)) {
+    const para = k++;
+    if (m[0].endsWith('/>')) continue;
+    const { full } = readParagraph(m[0]);
+    if (!full.trim()) continue;
+    for (const x of planOf(full, para, opt)) out.push(x.fix);
+  }
+  return out;
+}
+
+export async function fixDocx(input: ArrayBuffer | Uint8Array, opt: FixOptions = {}): Promise<FixResult> {
+  const { zip, xml } = await loadXml(input);
+  const changes: Change[] = [];
+  const skipIds = new Set(opt.skipIds ?? []);
+  let k = 0;
   // mọi đoạn <w:p> (không lồng nhau trong văn bản thường; đoạn trong bảng vẫn là <w:p> riêng)
-  const fixed = xml.replace(/<w:p\b[^>]*?(?:\/>|>[\s\S]*?<\/w:p>)/g, p => (p.endsWith('/>') ? p : fixParagraph(p, opt, changes)));
+  const fixed = xml.replace(allParas, p => { const para = k++; return p.endsWith('/>') ? p : fixParagraph(p, para, opt, skipIds, changes); });
   zip.file('word/document.xml', fixed);
   const data = await zip.generateAsync({ type: 'uint8array', compression: 'DEFLATE', mimeType: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' });
   return { data, changes: changes.reverse() };
