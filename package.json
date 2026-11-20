@@ -8,11 +8,12 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "tsc --noEmit",
-    "verify": "tsx scripts/verify-checker.ts && tsx scripts/verify-fixer.ts && tsx scripts/verify-ai-guard.ts",
+    "verify": "tsx scripts/verify-checker.ts && tsx scripts/verify-fixer.ts && tsx scripts/verify-ai-guard.ts && tsx scripts/verify-editor.ts",
     "check": "tsx scripts/check-file.ts",
     "import:chuong-trinh": "tsx scripts/import-chuong-trinh.ts"
   },
   "dependencies": {
+    "docx-preview": "^0.4.1",
     "jszip": "^3.10.1",
     "react": "^19.0.1",
     "react-dom": "^19.0.1"
