@@ -10,9 +10,12 @@
     "lint": "tsc --noEmit",
     "verify": "tsx scripts/verify-checker.ts && tsx scripts/verify-fixer.ts && tsx scripts/verify-ai-guard.ts",
     "check": "tsx scripts/check-file.ts",
-    "import:chuong-trinh": "tsx scripts/import-chuong-trinh.ts"
+    "import:chuong-trinh": "tsx scripts/import-chuong-trinh.ts",
+    "sync:ai": "tsx scripts/sync-ai-shared.ts",
+    "seed:chuong-trinh": "tsx scripts/seed-chuong-trinh.ts"
   },
   "dependencies": {
+    "@supabase/supabase-js": "^2.119.2",
     "jszip": "^3.10.1",
     "react": "^19.0.1",
     "react-dom": "^19.0.1"

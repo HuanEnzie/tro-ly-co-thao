@@ -1,5 +1,6 @@
 # Build trang web và đăng lên GitHub Pages mỗi lần đẩy lên nhánh main.
-# Phần AI gọi sang máy chủ Vercel: đặt biến repo API_BASE = địa chỉ Vercel (Settings → Secrets and variables → Actions → Variables).
+# Backend Supabase: đặt biến repo VITE_SUPABASE_URL và VITE_SUPABASE_ANON_KEY (xem docs/supabase.md).
+# Phần AI cũ gọi sang máy chủ Vercel: đặt biến repo API_BASE = địa chỉ Vercel (Settings → Secrets and variables → Actions → Variables).
 name: GitHub Pages
 
 on:
@@ -31,6 +32,8 @@ jobs:
         env:
           VITE_BASE: /${{ github.event.repository.name }}/
           VITE_API_BASE: ${{ vars.API_BASE }}
+          VITE_SUPABASE_URL: ${{ vars.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ vars.VITE_SUPABASE_ANON_KEY }}
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

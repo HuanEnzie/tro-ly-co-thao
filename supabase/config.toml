@@ -1,0 +1,38 @@
+# Cấu hình Supabase tối thiểu (dùng cho `supabase start` ở máy và `supabase link` / `db push`).
+project_id = "tro-ly-co-thao"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
+
+[storage]
+enabled = true
+file_size_limit = "50MiB"
+
+[auth]
+enabled = true
+site_url = "https://huanenzie.github.io/tro-ly-co-thao/"
+additional_redirect_urls = ["http://localhost:3010"]
+jwt_expiry = 3600
+enable_signup = true
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+otp_length = 6
+otp_expiry = 3600
+
+# Hàm review tự kiểm JWT trong code (để trả lời được yêu cầu OPTIONS của trình duyệt).
+[functions.review]
+verify_jwt = false
