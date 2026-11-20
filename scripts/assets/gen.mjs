@@ -34,7 +34,8 @@ const sleepSec = opt.sleep ? Number(opt.sleep) : 8;
 const ids = opt.id ? String(opt.id).split(",") : null;
 
 // ---- đọc style.md
-const styleMd = readFileSync(resolve(slide, "style.md"), "utf8");
+const styleMd = readFileSync(resolve(slide, "style.md"), "utf8").replace(/
+/g, String.fromCharCode(10));
 const block = (name) => {
   const fence = "`".repeat(3);
   const NL = String.fromCharCode(10);
