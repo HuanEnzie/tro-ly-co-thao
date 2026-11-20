@@ -6,7 +6,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { checkFile } from '../src/engine/checker';
 import { readDocx } from '../src/engine/docx';
-import { applyEdits, editsFor, fixDocx } from '../src/engine/fixer';
+import { applyEdits, editsFor, fixDocx, FIX_GROUPS, planFixes, rulesOfGroups } from '../src/engine/fixer';
 import { Program } from '../src/engine/types';
 import program from '../src/data/chuong-trinh.json';
 
@@ -56,6 +56,29 @@ for (const [name, hd] of [['kh-ngay-t12-chinh', true], ['kh-tuan-t12-chinh', fal
   const got = flat(b);
   const diff = expect.findIndex((l, i) => l !== got[i]);
   ok(diff < 0, `${name}: nội dung các ô đúng như dự kiến${diff >= 0 ? ` — lệch ở: “${expect[diff]}” ≠ “${got[diff]}”` : ''}`);
+}
+
+// 3. chọn mục sửa: chạy khô, chỉ nhóm chính tả, bỏ từng chỗ
+{
+  const src = readFileSync('tests/fixtures/kh-ngay-t11-goc.docx');
+  const all = await planFixes(src, { hdSpace: true });
+  ok(all.length > 0 && all.some(f => f.rule.startsWith('trinh-bay')) && all.some(f => f.rule.startsWith('chinh-ta')), `chạy khô liệt kê ${all.length} chỗ sửa, có cả chính tả lẫn dấu câu`);
+  const full = await fixDocx(src, { hdSpace: true });
+  ok(full.changes.length === all.length, 'số chỗ sửa thật = số chỗ chạy khô liệt kê');
+  const only = await fixDocx(src, { hdSpace: true, rules: rulesOfGroups(['chinh-ta']) });
+  ok(only.changes.length > 0 && only.changes.every(c => c.rule === 'chinh-ta.tu-dien'), `chỉ bật nhóm chính tả: ${only.changes.length} chỗ, không có thay đổi dấu câu`);
+  const prefix = await fixDocx(src, { hdSpace: true, rules: ['chinh-ta'] });
+  ok(prefix.changes.every(c => c.rule.startsWith('chinh-ta')) && prefix.changes.length >= only.changes.length, 'tiền tố “chinh-ta” gồm cả từ điển lẫn gõ đúp, lặp chữ');
+  const plan2 = await planFixes(src, { hdSpace: true, rules: rulesOfGroups(['dau-cau']) });
+  ok(plan2.length > 0 && plan2.every(f => f.group === 'dau-cau'), `chạy khô nhóm dấu câu: ${plan2.length} chỗ, đều thuộc nhóm dấu câu`);
+  ok(all.every(f => f.group && FIX_GROUPS.some(g => g.id === f.group)), 'mọi chỗ sửa đều thuộc một nhóm có ô tích');
+  const victim = all[Math.floor(all.length / 2)];
+  const part = await fixDocx(src, { hdSpace: true, skipIds: [victim.id] });
+  ok(part.changes.length === all.length - 1 && !part.changes.some(c => c.id === victim.id), 'bỏ 1 chỗ: số chỗ sửa giảm đúng 1');
+  const left = await planFixes(part.data, { hdSpace: true });
+  ok(left.some(f => f.before === victim.before && f.after === victim.after && f.rule === victim.rule), `bỏ 1 chỗ: file ra vẫn còn nguyên chỗ đó (“${victim.before}” → “${victim.after}”)`);
+  const part2 = await fixDocx(src, { hdSpace: true, skip: f => f.id === victim.id });
+  ok(part2.changes.length === part.changes.length, 'tuỳ chọn skip (hàm) cho kết quả như skipIds');
 }
 
 console.log(failed ? `\n${failed} kiểm tra chưa đạt` : '\nTất cả kiểm tra đều đạt');
