@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 /** các trang của ứng dụng; địa chỉ dạng #/soat (chạy được trên GitHub Pages, không cần máy chủ) */
 export const ROUTES = [
-  { id: 'tuan', path: '/tuan', label: 'Tuần này', short: 'Tuần này' },
+  { id: 'tuan', path: '/tuan', label: 'Trang đầu', short: 'Trang đầu' },
   { id: 'soat', path: '/soat', label: 'Soát & sửa', short: 'Soát' },
   { id: 'soan', path: '/soan', label: 'Soạn thảo', short: 'Soạn' },
   { id: 'slide', path: '/slide', label: 'Slide', short: 'Slide' },

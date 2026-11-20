@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { countLevels } from './engine/checker';
 import Review from './ui/pages/Review';
 import { Compose, Library, ProgramPage, Slides } from './ui/pages/Stubs';
-import ThisWeek from './ui/pages/ThisWeek';
+import Home from './ui/pages/Home';
 import { go, useRoute } from './ui/router';
 import { SessionProvider, useSession } from './ui/session';
 import Shell from './ui/Shell';
@@ -14,7 +14,7 @@ function Routes() {
   const badge = useMemo(() => ({ soat: items.reduce((n, i) => n + countLevels(i.report.issues).nang, 0) }), [items]);
   return (
     <Shell route={route} badge={badge}>
-      {route === 'tuan' && <ThisWeek />}
+      {route === 'tuan' && <Home />}
       {route === 'soat' && <Review />}
       {route === 'soan' && <Compose />}
       {route === 'slide' && <Slides />}

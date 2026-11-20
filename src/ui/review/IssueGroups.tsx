@@ -1,52 +1,59 @@
-import { useMemo } from 'react';
-import { Issue, LEVEL_LABEL } from '../../engine/types';
+import { useMemo, useState } from 'react';
+import { Issue } from '../../engine/types';
 
-const dayPart = (where: string) => where.split(' – ')[0];
-const actPart = (where: string) => where.split(' – ').slice(1).join(' – ') || 'Chung';
+const SHOW = 8;
 
-/** lỗi gom theo ngày → hoạt động; mặc định thu gọn, nhóm có lỗi nặng mở sẵn */
+/** gom lỗi cùng một luật thành một dòng ("Thiếu Nêu gương — 4 chỗ"); bấm mở mới thấy từng chỗ */
 export default function IssueGroups({ issues, active, onPick }: { issues: Issue[]; active: Issue | null; onPick: (i: Issue) => void }) {
-  const days = useMemo(() => {
-    const m = new Map<string, Map<string, Issue[]>>();
+  const [more, setMore] = useState(false);
+  const groups = useMemo(() => {
+    const m = new Map<string, Issue[]>();
     for (const i of issues) {
-      const d = dayPart(i.where), a = actPart(i.where);
-      const dm = m.get(d) ?? new Map<string, Issue[]>();
-      dm.set(a, [...(dm.get(a) ?? []), i]);
-      m.set(d, dm);
+      const k = `${i.level}|${i.source}|${i.rule}`;
+      m.set(k, [...(m.get(k) ?? []), i]);
     }
-    return [...m.entries()].map(([d, acts]) => ({
-      d, acts: [...acts.entries()],
-      n: [...acts.values()].reduce((x, l) => x + l.length, 0),
-      heavy: [...acts.values()].flat().some(i => i.level === 'nang'),
-    }));
+    return [...m.values()];
   }, [issues]);
+  const list = more ? groups : groups.slice(0, SHOW);
 
   return (
-    <div className="igroups">
-      {days.map(({ d, acts, n, heavy }) => (
-        <details key={d} className="dgroup" open={heavy}>
-          <summary><span className="gname">{d}</span><span className={`count ${heavy ? 'nang' : ''}`}>{n}</span></summary>
-          {acts.map(([a, list]) => (
-            <details key={a} className="agroup" open={list.some(i => i.level === 'nang')}>
-              <summary><span className="aname">{a}</span><span className="count">{list.length}</span></summary>
-              <ul>
-                {list.map((i, k) => (
-                  <li key={k}>
-                    <div className={`issue ${i.level} ${active === i ? 'sel' : ''}`}>
-                      <button className="issue-hit" onClick={() => onPick(i)} aria-pressed={active === i}>
-                        <span className="tags"><span className={`tag ${i.level}`}>{LEVEL_LABEL[i.level]}</span>{i.source === 'ai' && <span className="tag ai">AI</span>}</span>
-                        <span className="msg">{i.message}</span>
-                        {i.found && <span className="found"><span>Gốc:</span> {i.found}</span>}
-                        {i.fix && <span className="fix"><span>Sửa:</span> {i.fix}</span>}
-                      </button>
-                    </div>
-                  </li>
-                ))}
-              </ul>
-            </details>
-          ))}
-        </details>
-      ))}
+    <div className="ilist">
+      {list.map(g => <Group key={`${g[0].level}|${g[0].source}|${g[0].rule}`} g={g} active={active} onPick={onPick} />)}
+      {groups.length > SHOW && (
+        <button className="more" onClick={() => setMore(m => !m)}>{more ? 'Thu gọn' : `Xem thêm ${groups.length - SHOW} loại lỗi khác`}</button>
+      )}
     </div>
+  );
+}
+
+function Group({ g, active, onPick }: { g: Issue[]; active: Issue | null; onPick: (i: Issue) => void }) {
+  const lv = g[0].level;
+  if (g.length === 1) return <div className={`irow ${lv}`}><Hit i={g[0]} active={active} onPick={onPick} showMsg /></div>;
+
+  const same = g.every(i => i.message === g[0].message);
+  const title = same ? g[0].message : g[0].message.replace(/[“"][^”"]*[”"]/g, '…');
+  const days = [...new Set(g.map(i => i.where.split(' – ')[0]))];
+  return (
+    <details className={`irow ${lv}`} open={lv === 'nang'}>
+      <summary>
+        <span className="ihead">{g[0].source === 'ai' && <span className="ai">AI</span>}<span className="ititle">{title}</span></span>
+        <span className="iwhere">{g.length} chỗ · {days.slice(0, 3).join(', ')}{days.length > 3 ? '…' : ''}</span>
+      </summary>
+      <ul>{g.map((i, k) => <li key={k}><Hit i={i} active={active} onPick={onPick} showMsg={!same} /></li>)}</ul>
+    </details>
+  );
+}
+
+function Hit({ i, active, onPick, showMsg }: { i: Issue; active: Issue | null; onPick: (i: Issue) => void; showMsg?: boolean }) {
+  return (
+    <button className={`ihit ${active === i ? 'sel' : ''}`} onClick={() => onPick(i)} aria-pressed={active === i}>
+      {showMsg && <span className="ihead">{i.source === 'ai' && <span className="ai">AI</span>}<span className="ititle">{i.message}</span></span>}
+      <span className="iwhere">{i.where}</span>
+      {(i.found || i.fix) && (
+        <span className="idiff">
+          {i.fix ? <>{i.found && <del>{i.found}</del>} <span aria-hidden="true">→</span> <ins>{i.fix}</ins></> : <q>{i.found}</q>}
+        </span>
+      )}
+    </button>
   );
 }

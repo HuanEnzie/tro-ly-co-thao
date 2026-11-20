@@ -52,9 +52,22 @@ export default function FixPanel({ item }: { item: Item }) {
 
   const ready = plan !== null;
   return (
-    <section className="card fix" aria-label="Chọn mục sửa">
-      <h2>Sửa tự động</h2>
-      <p className="note">Chỉ sửa chỗ chắc chắn (chính tả, dấu câu). Nội dung, tên tiết, ngày tháng để cô quyết. Chỗ sửa được tô vàng trong file.</p>
+    <section className="fixhero" aria-label="Sửa tự động">
+      <div className="fixtop">
+        <div>
+          <h2>{!ready ? 'Đang tìm chỗ sửa được…' : selected.length ? `Máy sửa sẵn được ${selected.length} chỗ` : 'Không có chỗ nào máy tự sửa được'}</h2>
+          <p className="note">Chính tả, dấu câu, khoảng trắng{hd ? ', căn câu của trẻ thẳng hàng với cô' : ''}. Chỗ sửa tô vàng trong file, file gốc giữ nguyên. Lỗi nội dung để cô quyết.</p>
+        </div>
+        <button className="btn primary big" onClick={create} disabled={!ready || busy || !anything}>
+          {busy ? 'Đang tạo…' : 'Tải bản đã sửa'}
+        </button>
+      </div>
+      {item.fixed && (
+        <p className="done">Đã tải <a href={item.fixed.url} download={item.fixed.name}>{item.fixed.name}</a> · {item.fixed.changes.length} chỗ sửa
+          {item.fixed.align ? ` · căn ${item.fixed.align.changed} chỗ` : ''}{item.fixed.fill?.applied.length ? ` · điền ${item.fixed.fill.applied.length} câu trẻ` : ''}</p>
+      )}
+      <details className="fixopts">
+      <summary>Chọn chỗ được sửa</summary>
       <div className="quick">
         <button className="btn sm" onClick={() => preset(['chinh-ta', 'go-dup'])}>Chỉ chính tả</button>
         <button className="btn sm" onClick={() => preset(['dau-cau'])}>Chỉ dấu câu</button>
@@ -115,20 +128,16 @@ export default function FixPanel({ item }: { item: Item }) {
         </details>
       )}
 
-      <div className="actions">
-        <button className="btn primary block" onClick={create} disabled={!ready || busy || !anything}>
-          {busy ? 'Đang tạo…' : `Tạo bản sửa (${selected.length} chỗ${hd && align ? ', căn hàng' : ''}${fillChosen.length ? `, điền ${fillChosen.length} câu trẻ` : ''})`}
-        </button>
-      </div>
-      {item.fixed && (
-        <p className="note">Đã tạo <a href={item.fixed.url} download={item.fixed.name}>{item.fixed.name}</a> với {item.fixed.changes.length} chỗ sửa. File gốc không bị đổi.</p>
-      )}
-      {item.fixed?.align && (
+      <button className="btn primary" onClick={create} disabled={!ready || busy || !anything}>
+        {busy ? 'Đang tạo…' : `Tải bản sửa theo lựa chọn (${selected.length} chỗ${fillChosen.length ? `, ${fillChosen.length} câu trẻ` : ''})`}
+      </button>
+      </details>
+      {item.fixed?.align && !!item.fixed.align.unresolved.length && (
         <p className="note">
           Căn hàng: đã căn {item.fixed.align.changed} chỗ (thêm/bớt dòng trống), {item.fixed.align.unresolved.length} hàng chưa căn được{item.fixed.align.unresolved.length ? ' — ' + item.fixed.align.unresolved.join('; ') : ''}.
         </p>
       )}
-      {item.fixed?.fill && (
+      {!!item.fixed?.fill?.skipped.length && (
         <p className="note">
           Điền hoạt động của trẻ: đã điền {item.fixed.fill.applied.length} câu{item.fixed.fill.skipped.length ? `, bỏ qua ${item.fixed.fill.skipped.length} (${item.fixed.fill.skipped.map(x => x.reason).join('; ')})` : ''}.
         </p>

@@ -1,26 +1,18 @@
-/* Giấy kraft nhạt + xanh lá của bộ slide lớp; chữ to, rõ cho cô đọc. Phông hệ thống (điện thoại nào cũng có). */
+/* Nền trắng – xám rất nhạt, chữ gần đen, MỘT màu nhấn xanh lá. Đỏ chỉ cho lỗi nặng, cam cho "cần xem"; còn lại trung tính.
+   Chỉ một bảng màu sáng (giáo án in giấy trắng, xem trên nền sáng dễ đối chiếu nhất). */
 :root {
-  --bg: #f6f3ea; --surface: #fffdf7; --surface2: #f0ecde; --ink: #2d3a2a; --muted: #636d5d; --line: #e2dccb;
-  --leaf: #2e7d32; --leaf-ink: #fff; --leaf-soft: #eaf6ec; --sun: #fb8c00;
-  --nang: #c62828; --nang-bg: #fdecea; --xem: #a35d00; --xem-bg: #fff4e0; --ct: #1f6f8b; --ct-bg: #e7f3f7; --ai: #6a1b9a; --ai-bg: #f3e8f8;
-  --del-bg: #fdecea; --del: #b71c1c; --ins-bg: #e3f4e5; --ins: #1b5e20; --mark: #fff3c4;
-  --nav-w: 232px; --bar-h: 60px;
+  --bg: #f4f5f7; --surface: #ffffff; --surface2: #f1f3f5; --ink: #1d2125; --muted: #5d6670; --line: #e1e4e8;
+  --leaf: #157a3c; --leaf-ink: #fff; --leaf-soft: #e9f5ee; --sun: #f59e0b;
+  --nang: #c0392b; --nang-bg: #fdf0ee; --xem: #b45309; --xem-bg: #fff7e8; --ct: #5d6670; --ct-bg: #f1f3f5; --ai: #5d6670; --ai-bg: #f1f3f5;
+  --del-bg: #fdecea; --del: #a42a1f; --ins-bg: #e6f4ea; --ins: #11622f; --mark: #fff1b8;
+  --nav-w: 220px; --bar-h: 60px;
   --body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color-scheme: light;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #161b15; --surface: #1f261e; --surface2: #283227; --ink: #e8eee4; --muted: #a2ae9c; --line: #374335;
-    --leaf: #6fcf78; --leaf-ink: #0e1a0f; --leaf-soft: #22372a; --sun: #ffb74d;
-    --nang: #ff8a80; --nang-bg: #3a2220; --xem: #ffc766; --xem-bg: #3a2f18; --ct: #7ec8e3; --ct-bg: #1d3340; --ai: #d7a6f0; --ai-bg: #33223d;
-    --del-bg: #3d2321; --del: #ff9e94; --ins-bg: #1f3a24; --ins: #8fe39a; --mark: #4d4416;
-    color-scheme: dark;
-  }
 }
 
 * { box-sizing: border-box; }
 html { -webkit-text-size-adjust: 100%; }
-body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 var(--body); overflow-wrap: anywhere; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.55 var(--body); overflow-wrap: anywhere; }
 h1, h2, h3, p, ul { margin: 0; }
 ul { padding: 0; list-style: none; }
 a { color: var(--leaf); }
@@ -91,7 +83,6 @@ button { cursor: pointer; }
 .lv { display: flex; gap: 6px; flex-wrap: wrap; }
 .tag { font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 999px; white-space: nowrap; color: #fff; }
 .tag.nang { background: var(--nang); } .tag.xem { background: var(--xem); } .tag.chinh-ta { background: var(--ct); } .tag.ai { background: var(--ai); }
-@media (prefers-color-scheme: dark) { .tag { color: #111; } }
 
 /* ---------- Tuần này ---------- */
 .week-head { display: flex; flex-wrap: wrap; gap: 8px 20px; justify-content: space-between; align-items: start; }
