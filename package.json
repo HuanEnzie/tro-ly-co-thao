@@ -16,7 +16,6 @@
     "seed:chuong-trinh": "tsx scripts/seed-chuong-trinh.ts"
   },
   "dependencies": {
-    "verify": "",
     "@supabase/supabase-js": "^2.119.2",
     "docx-preview": "^0.4.1",
     "jszip": "^3.10.1",
