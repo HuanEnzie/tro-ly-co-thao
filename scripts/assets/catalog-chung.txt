@@ -1,0 +1,20 @@
+# id|loai|tenVi|prompt tiếng Anh|thẻ
+chung/khung/tieu-de|chung|Khung tiêu đề|a decorative rounded title banner frame, empty inside (blank cream panel), with small stars and a ribbon, colorful border|khung,tiêu đề
+chung/khung/noi-dung|chung|Khung nội dung|a rounded rectangular picture frame with thick colorful playful border, empty blank cream center, small leaves and stars at corners|khung,nội dung
+chung/khung/bong-noi|chung|Khung bong bóng lời|a big friendly speech bubble, blank white center, soft yellow outline|khung,lời nói
+chung/huy-hieu/tot|chung|Huy hiệu bé ngoan|a round medal badge with a ribbon, gold with a simple big star in the middle, no face|huy hiệu,khen
+chung/huy-hieu/cup|chung|Cúp vàng|a small shiny golden trophy cup with two handles, no face|huy hiệu,cúp
+chung/huy-hieu/hoa-diem-muoi|chung|Hoa điểm mười|a red flower-shaped award rosette with two ribbons and a golden center, no face|huy hiệu,khen
+chung/sao/vang|chung|Ngôi sao vàng|one big golden five-point star with rounded corners and a small sparkle, no face|sao
+chung/sao/lap-lanh|chung|Chùm sao lấp lánh|a cluster of three sparkling yellow stars of different sizes with tiny sparkles, no face|sao,lấp lánh
+chung/sao/vien|chung|Ngôi sao rỗng viền|one five-point star outline only, white inside, thick orange outline, no face|sao
+chung/chuong/vang|chung|Chuông vàng|one golden hand bell (rung-chuông-vàng style) with a short wooden handle, shiny, no face|chuông,rung chuông vàng
+chung/chuong/rung|chung|Chuông vàng đang rung|one golden hand bell tilted and ringing, with three curved motion lines on each side, no face|chuông,rung chuông vàng
+chung/o-dap-an/do|chung|Ô đáp án Đỏ|a glossy rounded square answer button, solid bright RED, blank center (no letter), thick darker-red rim|đáp án,đỏ
+chung/o-dap-an/tim|chung|Ô đáp án Tím|a glossy rounded square answer button, solid bright PURPLE, blank center (no letter), thick darker-purple rim|đáp án,tím
+chung/o-dap-an/xanh-la|chung|Ô đáp án Xanh lá|a glossy rounded square answer button, solid bright GREEN, blank center (no letter), thick darker-green rim|đáp án,xanh lá
+chung/o-dap-an/vang|chung|Ô đáp án Vàng|a glossy rounded square answer button, solid bright YELLOW, blank center (no letter), thick darker-orange rim|đáp án,vàng
+chung/nut/tien|chung|Nút tới|a round glossy orange button with a big white right-pointing arrow, no face|nút,tới
+chung/nut/lui|chung|Nút lui|a round glossy orange button with a big white left-pointing arrow, no face|nút,lui
+chung/nut/phat|chung|Nút phát|a round glossy green button with a white play triangle, no face|nút,phát
+chung/nut/loa|chung|Nút loa|a round glossy yellow button with a white speaker icon with sound waves, no face|nút,loa

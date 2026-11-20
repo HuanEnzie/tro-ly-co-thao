@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Duyệt hình slide</title>
+<style>
+  :root { --bg:#f6f5f1; --fg:#222; --card:#fff; --line:#d9d6cc; --ok:#2e9d4a; --bad:#d63a3a; --mute:#8a867a; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1d1d1b; --fg:#eee; --card:#2a2a27; --line:#444; --mute:#aaa; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:15px/1.4 "Segoe UI", system-ui, sans-serif; }
+  header { position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:1px solid var(--line); padding:10px 16px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  header h1 { font-size:17px; margin:0 12px 0 0; }
+  select, button { font:inherit; padding:6px 10px; border:1px solid var(--line); border-radius:8px; background:var(--card); color:var(--fg); cursor:pointer; }
+  button.primary { background:var(--ok); color:#fff; border-color:var(--ok); }
+  .stat { color:var(--mute); margin-left:auto; }
+  main { padding:12px 16px 40px; }
+  h2 { font-size:15px; margin:18px 0 8px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; }
+  .card { background:var(--card); border:2px solid var(--line); border-radius:10px; padding:6px; cursor:pointer; user-select:none; position:relative; }
+  .card .im { height:120px; display:flex; align-items:center; justify-content:center;
+    background-color:#fff; background-image:linear-gradient(45deg,#ddd 25%,transparent 25%,transparent 75%,#ddd 75%),linear-gradient(45deg,#ddd 25%,transparent 25%,transparent 75%,#ddd 75%);
+    background-size:16px 16px; background-position:0 0,8px 8px; border-radius:6px; }
+  .card img { max-width:100%; max-height:120px; object-fit:contain; }
+  .card .t { font-size:13px; margin-top:4px; }
+  .card .id { font-size:11px; color:var(--mute); word-break:break-all; }
+  .card.duyet { border-color:var(--ok); }
+  .card.hong { border-color:var(--bad); opacity:.75; }
+  .card .badge { position:absolute; top:6px; right:6px; font-size:11px; color:#fff; padding:1px 6px; border-radius:10px; }
+  .card.duyet .badge { background:var(--ok); } .card.hong .badge { background:var(--bad); }
+  .card.chua .im { color:var(--mute); font-size:12px; }
+  .warn { color:var(--bad); font-size:11px; }
+  .hint { color:var(--mute); margin:6px 0; }
+  dialog { border:1px solid var(--line); border-radius:12px; background:var(--card); color:var(--fg); max-width:90vw; }
+  dialog textarea { width:min(720px,80vw); height:260px; font:12px monospace; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Duyệt hình slide</h1>
+  <select id="fChuDe"></select>
+  <select id="fLoai"><option value="">Mọi loại</option><option>nen</option><option>nhan-vat</option><option>do-vat</option><option>chung</option><option>so</option><option>chu</option></select>
+  <select id="fTt"><option value="da-ve">Đã vẽ (chờ duyệt)</option><option value="">Tất cả</option><option value="chua-ve">Chưa vẽ</option><option value="da-duyet">Đã duyệt</option><option value="hong">Hỏng</option></select>
+  <button id="bAllOk">Duyệt cả nhóm đang hiện</button>
+  <button id="bExport" class="primary">Xuất JSON quyết định</button>
+  <span class="stat" id="stat"></span>
+</header>
+<main>
+  <p class="hint">Bấm một hình: xanh (Duyệt) &rarr; đỏ (Hỏng) &rarr; bỏ chọn. Hình hỏng = đồ vật có mặt, nền chưa trong suốt, sai hình, có chữ lạ, sai phong cách. Quyết định lưu trong trình duyệt; bấm "Xuất JSON" rồi chạy <code>node scripts/assets/apply-review.mjs quyet-dinh.json</code>.</p>
+  <div id="root"></div>
+</main>
+<dialog id="dlg"><p>Chép đoạn này vào file <b>quyet-dinh.json</b> (đã tự chép vào bộ nhớ tạm nếu được).</p><textarea id="ta" readonly></textarea><p><button id="bClose">Đóng</button></p></dialog>
+<script src="manifest.js"></script>
+<script>
+(function () {
+  var M = window.MANIFEST;
+  if (!M) { document.getElementById("root").textContent = "Thiếu manifest.js (chạy node scripts/assets/build-manifest.mjs)."; return; }
+  var KEY = "duyet-hinh-slide-v1";
+  var dec = {};
+  try { dec = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) {}
+  function persist() { try { localStorage.setItem(KEY, JSON.stringify(dec)); } catch (e) {} }
+
+  var chuDeTen = { chung: "Bộ chung" };
+  M.chuDe.forEach(function (c) { chuDeTen[c.slug] = c.ten; });
+  var fChuDe = document.getElementById("fChuDe");
+  fChuDe.innerHTML = '<option value="">Mọi chủ đề</option>' + Object.keys(chuDeTen).map(function (k) { return '<option value="' + k + '">' + chuDeTen[k] + "</option>"; }).join("");
+  var LOAI = { nen: "Nền", "nhan-vat": "Nhân vật", "do-vat": "Đồ vật", chung: "Chung", so: "Số", chu: "Chữ cái" };
+
+  function state(m) { if (dec[m.id] === "bo") return ""; return dec[m.id] || (m.trangThai === "da-duyet" ? "duyet" : m.trangThai === "hong" ? "hong" : ""); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+
+  function render() {
+    var cd = fChuDe.value, lo = document.getElementById("fLoai").value, tt = document.getElementById("fTt").value;
+    var list = M.mucs.filter(function (m) { return (!cd || m.chuDe === cd) && (!lo || m.loai === lo) && (!tt || m.trangThai === tt || (tt === "da-ve" && m.trangThai === "da-ve")); });
+    var groups = {};
+    list.forEach(function (m) { var k = m.chuDe + "|" + m.loai; (groups[k] = groups[k] || []).push(m); });
+    var html = "";
+    Object.keys(groups).forEach(function (k) {
+      var p = k.split("|");
+      html += "<h2>" + esc(chuDeTen[p[0]] || p[0]) + " &middot; " + esc(LOAI[p[1]] || p[1]) + " (" + groups[k].length + ")</h2><div class=\"grid\">";
+      groups[k].forEach(function (m) {
+        var s = state(m), drawn = !!m.tep;
+        var warn = "";
+        if (m.kiemTra && m.kiemTra.kind === "sticker" && (m.kiemTra.hongSot > 0 || !m.kiemTra.gocTrongSuot)) warn = '<div class="warn">Nền có thể chưa sạch</div>';
+        html += '<div class="card ' + (s === "duyet" ? "duyet" : s === "hong" ? "hong" : "") + (drawn ? "" : " chua") + '" data-id="' + esc(m.id) + '" title="' + esc(m.prompt) + '">'
+          + (s ? '<span class="badge">' + (s === "duyet" ? "Duyệt" : "Hỏng") + "</span>" : "")
+          + '<div class="im">' + (drawn ? '<img loading="lazy" src="' + esc(m.tep) + '" alt="' + esc(m.tenVi) + '">' : "chưa vẽ") + "</div>"
+          + '<div class="t">' + esc(m.tenVi) + "</div><div class=\"id\">" + esc(m.id) + "</div>" + warn + "</div>";
+      });
+      html += "</div>";
+    });
+    document.getElementById("root").innerHTML = html || '<p class="hint">Không có hình nào khớp bộ lọc.</p>';
+    var n = { duyet: 0, hong: 0 };
+    M.mucs.forEach(function (m) { var s = state(m); if (n[s] !== undefined) n[s]++; });
+    var daVe = M.mucs.filter(function (m) { return m.tep; }).length;
+    document.getElementById("stat").textContent = "Đã vẽ " + daVe + "/" + M.mucs.length + " · duyệt " + n.duyet + " · hỏng " + n.hong;
+  }
+
+  document.getElementById("root").addEventListener("click", function (e) {
+    var c = e.target.closest(".card"); if (!c) return;
+    var m = M.mucs.find(function (x) { return x.id === c.dataset.id; });
+    if (!m.tep) return;
+    var s = state(m), nx = s === "" ? "duyet" : s === "duyet" ? "hong" : "";
+    if (nx) dec[m.id] = nx; else { dec[m.id] = "bo"; }
+    persist(); render();
+  });
+  ["fChuDe", "fLoai", "fTt"].forEach(function (id) { document.getElementById(id).addEventListener("change", render); });
+  document.getElementById("bAllOk").addEventListener("click", function () {
+    document.querySelectorAll(".card:not(.chua)").forEach(function (c) { if (!/hong/.test(c.className)) dec[c.dataset.id] = "duyet"; });
+    persist(); render();
+  });
+  document.getElementById("bExport").addEventListener("click", function () {
+    var out = { taoLuc: new Date().toISOString(), quyetDinh: {} };
+    Object.keys(dec).forEach(function (id) { if (dec[id] === "duyet" || dec[id] === "hong") out.quyetDinh[id] = dec[id] === "duyet" ? "da-duyet" : "hong"; });
+    var txt = JSON.stringify(out, null, 1);
+    document.getElementById("ta").value = txt;
+    try { navigator.clipboard.writeText(txt); } catch (e) {}
+    document.getElementById("dlg").showModal();
+  });
+  document.getElementById("bClose").addEventListener("click", function () { document.getElementById("dlg").close(); });
+  render();
+})();
+</script>
+</body>
+</html>
