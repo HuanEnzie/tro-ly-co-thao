@@ -776,9 +776,13 @@
    "the": [
     "trường mầm non"
    ],
-   "trangThai": "hong",
+   "trangThai": "da-ve",
    "tep": "img/truong-mam-non/nen/lop-hoc.webp",
-   "ghiChu": "mặt trời trang trí có mặt cười; đã sửa prompt, cần vẽ lại (--redo-hong)"
+   "kiemTra": {
+    "w": 1280,
+    "h": 720,
+    "kind": "scene"
+   }
   },
   {
    "id": "truong-mam-non/nen/san-truong",
