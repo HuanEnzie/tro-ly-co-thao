@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 import { countLevels, sortIssues } from '../../engine/checker';
 import { Issue, KIND_LABEL, Level, LEVEL_LABEL } from '../../engine/types';
 import FixPanel from '../review/FixPanel';
@@ -9,12 +9,14 @@ import { slots } from '../slots';
 import { Item } from '../types';
 
 function useWide() {
-  const q = '(min-width: 768px)';
+  const q = '(min-width: 900px)'; // cùng mốc với @media của .review trong styles.css
   const [w, setW] = useState(() => window.matchMedia(q).matches);
   useEffect(() => {
     const m = window.matchMedia(q), on = () => setW(m.matches);
+    on(); // phòng khi cỡ cửa sổ đổi giữa lúc khởi tạo và lúc gắn listener
     m.addEventListener('change', on);
-    return () => m.removeEventListener('change', on);
+    window.addEventListener('resize', on); // một số trình duyệt/khung xem không bắn 'change' khi đổi cỡ
+    return () => { m.removeEventListener('change', on); window.removeEventListener('resize', on); };
   }, []);
   return w;
 }
@@ -68,12 +70,14 @@ function Doc({ it, aiReady, onAi, onRemove }: { it: Item; aiReady: boolean; onAi
   const wide = useWide();
   const [filter, setFilter] = useState<Level | 'all'>('all');
   const [active, setActive] = useState<Issue | null>(null);
+  const [pickN, setPickN] = useState(0); // tăng mỗi lần bấm lỗi, để bấm lại cùng lỗi vẫn cuộn lại tới chỗ đó
+  const pick = (i: Issue) => { setActive(i); setPickN(n => n + 1); };
   const all = useMemo(() => sortIssues([...it.report.issues, ...(it.ai?.issues ?? [])]), [it]);
   const counts = countLevels(all);
   const shown = filter === 'all' ? all : all.filter(i => i.level === filter);
   const p = it.report.parsed;
   const Preview = slots.preview ?? ParsedPreview;
-  const preview = <Preview item={it} activeIssue={active} onPickIssue={setActive} />;
+  const preview = <Suspense fallback={<p className="note">Đang mở bản xem trước…</p>}><Preview item={it} activeIssue={active} pickNonce={pickN} onPickIssue={pick} /></Suspense>;
 
   return (
     <div className="review">
@@ -85,9 +89,9 @@ function Doc({ it, aiReady, onAi, onRemove }: { it: Item; aiReady: boolean; onAi
           </div>
           <button className="link" onClick={onRemove} aria-label="Bỏ file này khỏi phiên">Bỏ</button>
         </div>
-        {wide ? <div className="preview-box" data-slot="preview">{preview}</div> : (
-          <details className="preview-m" data-slot="preview">
-            <summary>Xem văn bản</summary>
+        {wide ? <div className={`preview-box ${slots.preview ? "has-editor" : ""}`} data-slot="preview">{preview}</div> : (
+          <details className="preview-m" data-slot="preview" open>
+            <summary>Xem văn bản và sửa tay</summary>
             {preview}
           </details>
         )}
@@ -118,7 +122,7 @@ function Doc({ it, aiReady, onAi, onRemove }: { it: Item; aiReady: boolean; onAi
         {it.aiError && <p className="err">{it.aiError}</p>}
         {it.ai && it.ai.dropped > 0 && <p className="note">Đã bỏ {it.ai.dropped} ý của AI vì trích sai giáo án hoặc trùng lỗi máy đã bắt.</p>}
 
-        <IssueGroups issues={shown} active={active} onPick={setActive} />
+        <IssueGroups issues={shown} active={active} onPick={pick} />
         {!all.length && <p className="clean">Không thấy lỗi nào.</p>}
 
         <FixPanel item={it} />

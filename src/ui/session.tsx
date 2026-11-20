@@ -1,8 +1,8 @@
 import { createContext, ReactNode, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react';
 import { guardAi, parseAiJson } from '../ai/guard';
 import { userMessage } from '../ai/prompt';
-import { checkFile, checkMany, readProgram } from '../engine/checker';
-import { fixDocx, FixOptions } from '../engine/fixer';
+import { checkFile, checkMany, countLevels, dedupe, readProgram, sortIssues } from '../engine/checker';
+import { alignIssues, ChainOptions, runFixChain } from './fixchain';
 import { Program } from '../engine/types';
 import bundled from '../data/chuong-trinh.json';
 import { Item, Quota } from './types';
@@ -29,7 +29,9 @@ export interface Session {
   loadProgram: (f: File) => Promise<void>;
   runAi: (it: Item) => Promise<void>;
   /** tạo file (đã sửa).docx theo các mục chọn và tải về; không ghi đè file gốc */
-  makeFixed: (it: Item, opt?: FixOptions) => Promise<void>;
+  makeFixed: (it: Item, opt?: ChainOptions) => Promise<void>;
+  /** thêm một file Word đã có trong bộ nhớ (bản sửa tay, bản máy soạn…) vào phiên và soát ngay */
+  addBuffer: (name: string, data: ArrayBuffer | Uint8Array) => Promise<void>;
   /** mở hộp chọn file Word (dùng ở nút “Soát file mới”) */
   pickFiles: () => void;
   pickProgram: () => void;
@@ -54,6 +56,18 @@ export function currentWeek(program: Program, now = new Date()): number | null {
   return program.weeks[0]?.tuan ?? null;
 }
 
+/** soát file; với KH ngày thêm các lỗi căn hàng/khớp cô–trẻ (mức "xem") */
+async function checkItem(name: string, data: ArrayBuffer, program: Program) {
+  const report = await checkFile(name, data, program);
+  if (report.parsed.kind !== 'kh-ngay') return report;
+  try {
+    const extra = await alignIssues(data);
+    if (!extra.length) return report;
+    const issues = sortIssues(dedupe([...report.issues, ...extra]));
+    return { ...report, issues, counts: countLevels(issues) };
+  } catch { return report; }
+}
+
 /** soát chéo KH tuần ↔ KH ngày khi có cả hai */
 function relink(list: Item[]): Item[] {
   const base = list.map(i => ({ ...i.report, issues: i.report.issues.filter(x => x.rule !== 'khop.tuan-ngay') }));
@@ -75,20 +89,30 @@ export function SessionProvider({ children, onFilesAdded }: { children: ReactNod
 
   useEffect(() => { fetch(API_URL).then(r => r.json()).then(setQuota).catch(() => setQuota(null)); }, []);
 
-  const addFiles = useCallback(async (files: FileList | File[]) => {
+  const addNamed = useCallback(async (list: { name: string; data: ArrayBuffer }[]) => {
     setBusy(true);
     try {
       const fresh: Item[] = [];
-      for (const f of [...files].filter(f => /\.docx$/i.test(f.name))) {
-        const data = await f.arrayBuffer();
-        const report = await checkFile(f.name, data, program);
-        const hash = await sha(data);
+      for (const f of list) {
+        const report = await checkItem(f.name, f.data, program);
+        const hash = await sha(f.data);
         const cached = load<Item['ai']>(AI_CACHE + hash);
-        fresh.push({ id: `${hash}-${Date.now()}-${Math.random()}`, name: f.name, data, hash, report, ai: cached ?? undefined });
+        fresh.push({ id: `${hash}-${Date.now()}-${Math.random()}`, name: f.name, data: f.data, hash, report, ai: cached ?? undefined });
       }
       if (fresh.length) { setItems(prev => relink([...prev, ...fresh])); setActiveId(fresh[0].id); onFilesAdded?.(); }
     } finally { setBusy(false); }
   }, [program, onFilesAdded]);
+
+  const addFiles = useCallback(async (files: FileList | File[]) => {
+    const list: { name: string; data: ArrayBuffer }[] = [];
+    for (const f of [...files].filter(f => /\.docx$/i.test(f.name))) list.push({ name: f.name, data: await f.arrayBuffer() });
+    await addNamed(list);
+  }, [addNamed]);
+
+  const addBuffer = useCallback(async (name: string, data: ArrayBuffer | Uint8Array) => {
+    const ab = data instanceof ArrayBuffer ? data : (data.buffer.slice(data.byteOffset, data.byteOffset + data.byteLength) as ArrayBuffer);
+    await addNamed([{ name, data: ab }]);
+  }, [addNamed]);
 
   const loadProgram = useCallback(async (f: File) => {
     const p = await readProgram(await f.arrayBuffer());
@@ -96,7 +120,7 @@ export function SessionProvider({ children, onFilesAdded }: { children: ReactNod
     save(PROGRAM_KEY, p);
     setProgram(p);
     // soát lại các file đang mở theo chương trình mới
-    const again = await Promise.all(items.map(async i => ({ ...i, report: await checkFile(i.name, i.data, p) })));
+    const again = await Promise.all(items.map(async i => ({ ...i, report: await checkItem(i.name, i.data, p) })));
     setItems(relink(again));
   }, [items]);
 
@@ -120,11 +144,11 @@ export function SessionProvider({ children, onFilesAdded }: { children: ReactNod
     }
   }, [passcode]);
 
-  const makeFixed = useCallback(async (it: Item, opt: FixOptions = {}) => {
-    const { data, changes } = await fixDocx(it.data, { hdSpace: it.report.parsed.kind === 'kh-ngay', ...opt });
+  const makeFixed = useCallback(async (it: Item, opt: ChainOptions = {}) => {
+    const { data, changes, align, fill } = await runFixChain(it.data, { hdSpace: it.report.parsed.kind === 'kh-ngay', ...opt });
     const url = URL.createObjectURL(new Blob([data as BlobPart], { type: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' }));
     const name = it.name.replace(/\.docx$/i, ' (đã sửa).docx');
-    setItems(prev => prev.map(x => (x.id === it.id ? { ...x, fixed: { url, name, changes } } : x)));
+    setItems(prev => prev.map(x => (x.id === it.id ? { ...x, fixed: { url, name, changes, align, fill } } : x)));
     const a = document.createElement('a');
     a.href = url; a.download = name; a.click();
   }, []);
@@ -133,9 +157,9 @@ export function SessionProvider({ children, onFilesAdded }: { children: ReactNod
   const setPasscode = useCallback((v: string) => { setPass(v); save(PASS_KEY, v); }, []);
 
   const value = useMemo<Session>(() => ({
-    program, items, busy, quota, passcode, setPasscode, week, setWeek, activeId, setActiveId, addFiles, removeItem, loadProgram, runAi, makeFixed,
+    program, items, busy, quota, passcode, setPasscode, week, setWeek, activeId, setActiveId, addFiles, removeItem, loadProgram, runAi, makeFixed, addBuffer,
     pickFiles: () => fileRef.current?.click(), pickProgram: () => progRef.current?.click(),
-  }), [program, items, busy, quota, passcode, setPasscode, week, activeId, addFiles, removeItem, loadProgram, runAi, makeFixed]);
+  }), [program, items, busy, quota, passcode, setPasscode, week, activeId, addFiles, removeItem, loadProgram, runAi, makeFixed, addBuffer]);
 
   return (
     <Ctx.Provider value={value}>

@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "tsc --noEmit",
-    "verify": "tsx scripts/verify-checker.ts && tsx scripts/verify-fixer.ts && tsx scripts/verify-ai-guard.ts && tsx scripts/verify-align.ts && tsx scripts/verify-compose.ts && tsx scripts/verify-slides.ts && tsx scripts/verify-editor.ts",
+    "verify": "tsx scripts/verify-checker.ts && tsx scripts/verify-fixer.ts && tsx scripts/verify-ai-guard.ts && tsx scripts/verify-align.ts && tsx scripts/verify-compose.ts && tsx scripts/verify-slides.ts && tsx scripts/verify-editor.ts && tsx scripts/verify-ui-chain.ts",
     "compose": "tsx scripts/compose-week.ts",
     "check": "tsx scripts/check-file.ts",
     "import:chuong-trinh": "tsx scripts/import-chuong-trinh.ts",

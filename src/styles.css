@@ -182,3 +182,41 @@ ins { background: var(--ins-bg); color: var(--ins); text-decoration: none; font-
   .preview-box { max-height: calc(100vh - 150px); overflow: auto; position: sticky; top: 16px; }
 }
 @media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+
+/* ---------- xem trước + sửa tay (khung cao cố định để CellEditor height:100% chạy) ---------- */
+.edit-frame { height: min(70vh, 640px); min-height: 380px; min-width: 0; }
+.preview-box.has-editor { padding: 8px; overflow: hidden; }
+.preview-m .edit-frame { margin-bottom: 4px; }
+@media (min-width: 900px) {
+  .preview-box { max-height: none; }
+  .preview-box.has-editor .edit-frame { height: calc(100vh - 190px); }
+}
+
+/* ---------- form chung (trang Soạn, Slide, Thư viện) ---------- */
+.field { display: grid; gap: 4px; min-width: 0; }
+.field > span { font-size: 14px; color: var(--muted); font-weight: 600; }
+.field select, .field input[type="text"], .field input[type="email"], .field input[type="number"], .field textarea {
+  width: 100%; min-height: 44px; border: 1.5px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 10px; padding: 8px 10px; font: inherit;
+}
+.field textarea { min-height: 72px; resize: vertical; }
+.field input[type="file"] { max-width: 100%; min-height: 44px; }
+.days-pick { border: 0; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: center; min-width: 0; }
+.days-pick legend { font-size: 14px; color: var(--muted); font-weight: 600; padding: 0; margin-bottom: 2px; }
+.check.inline { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; cursor: pointer; }
+.check.inline input, .gchecks .check input { width: 22px; height: 22px; flex: none; accent-color: var(--leaf); }
+.gchecks .check { display: flex; align-items: center; gap: 10px; min-height: 44px; cursor: pointer; }
+.gchecks .check span { flex: 1; min-width: 0; }
+.gchecks .check em { font-style: normal; font-size: 13px; color: var(--muted); }
+.quyet { display: grid; gap: 6px; padding-left: 18px; list-style: disc; font-size: 14px; }
+
+/* ---------- trang Slide ---------- */
+.deck { display: grid; gap: 8px; padding: 0; list-style: none; }
+.slide-item { border: 1px solid var(--line); border-radius: 12px; padding: 4px 10px 8px; display: grid; gap: 6px; background: var(--surface); min-width: 0; }
+.slide-item summary { display: flex; align-items: center; gap: 10px; min-height: 44px; cursor: pointer; }
+.slide-item .no { flex: none; width: 28px; height: 28px; border-radius: 50%; background: var(--leaf-soft); color: var(--leaf); font-weight: 700; display: grid; place-items: center; font-size: 13px; }
+.slide-item .tname { min-width: 0; }
+.slide-item .tname small { color: var(--muted); font-size: 13px; }
+.slide-form { display: grid; gap: 10px; padding: 6px 0 4px; }
+.slide-ops { display: flex; gap: 8px; flex-wrap: wrap; }
+@media (max-width: 899px) { .review { grid-template-columns: minmax(0, 1fr); } } /* cột không phình theo bản xem trước rộng */
+.edit-frame, .preview-m { max-width: 100%; overflow: hidden; }

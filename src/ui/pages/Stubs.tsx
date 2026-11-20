@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import ComingSoon from '../ComingSoon';
 import { useSession } from '../session';
 import { slots } from '../slots';
@@ -10,19 +11,19 @@ function useProps() {
 export function Compose() {
   const props = useProps();
   const Slot = slots.compose;
-  return Slot ? <Slot {...props} /> : <ComingSoon title="Soạn thảo" text="Máy soạn kế hoạch tuần, kế hoạch ngày sẽ gắn ở đây." />;
+  return Slot ? <Suspense fallback={<p className="note">Đang mở…</p>}><Slot {...props} /></Suspense> : <ComingSoon title="Soạn thảo" text="Máy soạn kế hoạch tuần, kế hoạch ngày sẽ gắn ở đây." />;
 }
 
 export function Slides() {
   const props = useProps();
   const Slot = slots.slides;
-  return Slot ? <Slot {...props} /> : <ComingSoon title="Slide" text="Máy làm slide cho bài giảng sẽ gắn ở đây." />;
+  return Slot ? <Suspense fallback={<p className="note">Đang mở…</p>}><Slot {...props} /></Suspense> : <ComingSoon title="Slide" text="Máy làm slide cho bài giảng sẽ gắn ở đây." />;
 }
 
 export function Library() {
   const props = useProps();
   const Slot = slots.library;
-  return Slot ? <Slot {...props} /> : <ComingSoon title="Thư viện" text="Mọi file theo tuần, chủ đề và lịch sử phiên bản sẽ gắn ở đây." />;
+  return Slot ? <Suspense fallback={<p className="note">Đang mở…</p>}><Slot {...props} /></Suspense> : <ComingSoon title="Thư viện" text="Mọi file theo tuần, chủ đề và lịch sử phiên bản sẽ gắn ở đây." />;
 }
 
 export function ProgramPage() {
