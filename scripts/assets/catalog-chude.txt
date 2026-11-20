@@ -1,0 +1,401 @@
+# [slug|Tên chủ đề] rồi các dòng: loai|id-ngắn|tenVi|prompt
+[truong-mam-non|Trường mầm non]
+nen|lop-hoc|Lớp học mầm non|a bright Vietnamese kindergarten classroom interior with small tables, shelves of toys and books, windows with bunting flags, NO people, and NO faces on any decoration or object (no smiling sun, no smiling clouds, no eyes on toys)
+nen|san-truong|Sân trường|a kindergarten schoolyard with a slide, swings, flowers and a green gate, NO people
+nen|trung-thu|Đêm Trung thu|a cheerful Mid-Autumn festival night scene with hanging star lanterns and a big full moon, NO people
+nhan-vat|co-giao|Cô giáo|a young Vietnamese kindergarten teacher woman in a pretty pastel blouse and long skirt, waving kindly
+nhan-vat|be-trai|Bé trai|a Vietnamese boy 5 years old in school uniform shirt and shorts with a small backpack, waving
+nhan-vat|be-gai|Bé gái|a Vietnamese girl 5 years old with two pigtails in a school dress, waving
+nhan-vat|be-cung-choi|Hai bé chơi cùng nhau|two Vietnamese preschool kids holding hands and playing together
+nhan-vat|be-xep-hang|Các bé xếp hàng|a line of four Vietnamese preschool kids in a queue
+nhan-vat|be-an-com|Bé ăn cơm|a Vietnamese preschool child sitting and eating happily with a spoon
+nhan-vat|be-rua-tay|Bé rửa tay|a Vietnamese preschool child washing hands at a small sink
+nhan-vat|be-chao-co|Bé chào cô|a Vietnamese preschool child bowing politely with crossed arms to greet
+do-vat|cap-sach|Cặp sách|a small kids school backpack
+do-vat|but-chi|Bút chì|a yellow pencil
+do-vat|but-sap|Hộp bút sáp màu|an open box of colorful wax crayons
+do-vat|sach|Quyển sách|a closed picture book with colorful cover
+do-vat|ban-ghe|Bàn ghế mầm non|a small kids table with two small chairs
+do-vat|bang|Bảng|a classroom blackboard on a wooden stand, blank
+do-vat|ghe-be|Ghế bé|a small wooden kids chair
+do-vat|bup-be|Búp bê|a rag doll toy with simple stitched dot eyes
+do-vat|xep-hinh|Đồ chơi xếp hình|a stack of colorful wooden building blocks
+do-vat|trong|Trống|a small kids drum with two sticks
+do-vat|den-long|Đèn lồng ngôi sao|a red paper star lantern with a stick handle
+do-vat|banh-trung-thu|Bánh Trung thu|a round mooncake and a cut half showing the filling
+do-vat|mam-co|Mâm cỗ Trung thu|a Mid-Autumn tray with a pomelo, mooncakes and fruit
+do-vat|mat-na|Mặt nạ Trung thu|a colorful paper festival mask
+do-vat|ly-nuoc|Ly nước|a plastic kids cup with a little water
+do-vat|khan-mat|Khăn mặt|a folded small towel
+do-vat|xa-phong|Xà phòng|a bar of soap with bubbles
+do-vat|ke-giay|Kệ để giày|a small shoe rack with kids shoes
+do-vat|keo|Kéo thiếu nhi|safe kids scissors with round tips
+do-vat|ho-dan|Hồ dán|a glue stick
+do-vat|mau-nuoc|Màu nước|a watercolor palette with a paintbrush
+do-vat|cong-truong|Cổng trường|a cheerful kindergarten gate arch with flowers, NO people
+do-vat|cot-co|Cột cờ và cờ đỏ sao vàng|a flagpole with the Vietnamese national flag (red with yellow star)
+do-vat|cau-truot|Cầu trượt|a playground slide
+do-vat|xich-du|Xích đu|a playground swing
+do-vat|bong|Quả bóng|a colorful kids ball
+do-vat|chuong-truong|Chuông trường|a school hand bell
+[ban-than|Bản thân]
+nen|phong-ngu|Phòng ngủ của bé|a cozy kid bedroom with a small bed, toys and a window, NO people
+nen|guong|Góc gương và tủ áo|a kids dressing corner with a mirror and wardrobe, NO people
+nen|san-choi|Sân chơi công viên|a sunny playground park with slide and trees, NO people
+nhan-vat|be-trai-dung|Bé trai đứng|a Vietnamese boy 5 years old standing, casual shirt and shorts, smiling
+nhan-vat|be-gai-dung|Bé gái đứng|a Vietnamese girl 5 years old standing, cute dress, smiling
+nhan-vat|be-danh-rang|Bé đánh răng|a Vietnamese kid brushing teeth with a toothbrush
+nhan-vat|be-tam|Bé tắm|a Vietnamese kid in a bath with soap bubbles
+nhan-vat|be-ngu|Bé ngủ|a Vietnamese kid sleeping in bed under a blanket
+nhan-vat|be-tap-the-duc|Bé tập thể dục|a Vietnamese kid doing morning exercise with arms up
+nhan-vat|be-khoc|Bé khóc|a Vietnamese kid sad and crying with tears
+nhan-vat|be-cuoi|Bé cười|a Vietnamese kid laughing happily with arms wide
+do-vat|mat|Con mắt|a simple stylized open eye symbol icon only (anatomy diagram style, no cartoon face)
+do-vat|tai|Cái tai|a simple stylized human ear symbol icon
+do-vat|mui|Cái mũi|a simple stylized human nose symbol icon
+do-vat|mieng|Cái miệng|a simple stylized human mouth with tongue symbol icon
+do-vat|ban-tay|Bàn tay|an open child hand symbol icon
+do-vat|ban-chan|Bàn chân|a child bare foot symbol icon
+do-vat|ban-chai|Bàn chải đánh răng|a toothbrush with toothpaste
+do-vat|kem-danh-rang|Kem đánh răng|a toothpaste tube
+do-vat|ao|Áo phông|a kids T-shirt
+do-vat|quan|Quần short|a pair of kids shorts
+do-vat|vay|Váy bé gái|a girl dress
+do-vat|giay|Đôi giày|a pair of kids sneakers
+do-vat|mu|Mũ|a kids sun hat
+do-vat|luoc|Cái lược|a hair comb
+do-vat|guong-soi|Gương soi|a hand mirror with a pink frame
+do-vat|sua-tam|Sữa tắm|a bottle of body wash with bubbles
+do-vat|thuoc-do-chieu-cao|Thước đo chiều cao|a wall height-measuring chart ruler for kids, no numbers
+do-vat|can-suc-khoe|Cân|a kids bathroom scale
+do-vat|sua|Hộp sữa|a milk carton and a glass of milk
+do-vat|rau-cu|Rau củ|a group of carrots, broccoli and tomatoes
+do-vat|trai-cay|Trái cây|a group of apple, orange, banana
+do-vat|gau-bong|Gấu bông|a plush teddy bear toy with simple stitched dot eyes
+do-vat|goi-chan|Gối và chăn|a pillow with a folded blanket
+do-vat|khau-trang|Khẩu trang|a face mask
+do-vat|chai-nuoc|Chai nước|a water bottle
+do-vat|trai-tim|Trái tim|a red heart symbol
+[gia-dinh|Gia đình]
+nen|phong-khach|Phòng khách|a warm Vietnamese family living room with sofa and tea table, NO people
+nen|nha-bep|Nhà bếp|a family kitchen with stove, table and cabinets, NO people
+nen|ngoi-nha|Ngôi nhà|a cute Vietnamese house with garden and gate, NO people
+nhan-vat|ong|Ông|a Vietnamese grandfather with gray hair in a casual shirt, smiling
+nhan-vat|ba|Bà|a Vietnamese grandmother with gray hair bun in a simple blouse, smiling
+nhan-vat|bo|Bố|a Vietnamese father in a polo shirt, smiling
+nhan-vat|me|Mẹ|a Vietnamese mother in a blouse, smiling
+nhan-vat|anh-trai|Anh trai|a Vietnamese older brother about 9 years old, casual clothes
+nhan-vat|chi-gai|Chị gái|a Vietnamese older sister about 9 years old, casual clothes
+nhan-vat|em-be|Em bé|a Vietnamese baby sitting in a diaper, smiling
+nhan-vat|ca-nha|Cả nhà|a whole Vietnamese family of five standing together smiling
+do-vat|bat-com|Bát cơm|a bowl of rice with chopsticks
+do-vat|noi-com|Nồi cơm điện|an electric rice cooker
+do-vat|chao|Cái chảo|a frying pan
+do-vat|noi|Cái nồi|a cooking pot with lid
+do-vat|dao-thot|Dao và thớt|a kitchen knife and a wooden cutting board
+do-vat|bep-ga|Bếp ga|a gas stove
+do-vat|tu-lanh|Tủ lạnh|a refrigerator
+do-vat|ti-vi|Ti vi|a flat screen TV
+do-vat|quat|Quạt điện|an electric standing fan
+do-vat|sofa|Ghế sofa|a sofa
+do-vat|giuong|Cái giường|a bed with pillow
+do-vat|tu-quan-ao|Tủ quần áo|a wardrobe closet
+do-vat|may-giat|Máy giặt|a washing machine
+do-vat|choi-hot-rac|Chổi và hót rác|a broom and dustpan
+do-vat|binh-hoa|Bình hoa|a vase with flowers
+do-vat|khung-anh|Khung ảnh gia đình|a picture frame with a blank center
+do-vat|dong-ho-treo-tuong|Đồng hồ treo tường|a wall clock
+do-vat|ban-tho|Bàn thờ|a small family altar with incense bowl and fruit tray
+do-vat|dien-thoai|Điện thoại|a smartphone
+do-vat|banh-sinh-nhat|Bánh sinh nhật|a birthday cake with candles
+do-vat|hop-qua|Hộp quà|a gift box with ribbon
+do-vat|nha-trai-tim|Ngôi nhà trái tim|a house icon with a heart on it
+do-vat|bat-dua|Bát đũa|bowls and chopsticks on a tray
+do-vat|am-tra|Ấm trà và chén|a teapot and two small cups
+do-vat|xe-day-em-be|Xe đẩy em bé|a baby stroller
+do-vat|noi-em-be|Nôi em bé|a baby crib
+do-vat|binh-sua|Bình sữa|a baby milk bottle
+do-vat|cay-canh|Cây cảnh|a potted plant in a ceramic pot
+[nghe-nghiep|Nghề nghiệp]
+nen|benh-vien|Bệnh viện|a bright hospital room/waiting hall scene, NO people
+nen|cong-truong|Công trường|a construction site with a crane and a building frame, NO people
+nen|canh-dong|Cánh đồng lúa|a green and golden Vietnamese rice field with a farm hut, NO people
+nen|bep-nha-hang|Bếp nhà hàng|a restaurant kitchen with counters and hanging pans, NO people
+nhan-vat|bac-si|Bác sĩ|a Vietnamese doctor in a white coat with a stethoscope around the neck, smiling
+nhan-vat|co-giao-mam-non|Cô giáo mầm non|a Vietnamese kindergarten teacher woman in a pastel blouse holding a picture book, smiling
+nhan-vat|ky-su-xay-dung|Kỹ sư xây dựng|a Vietnamese construction engineer in a yellow safety helmet and orange vest holding a blueprint
+nhan-vat|dau-bep|Đầu bếp|a Vietnamese chef in a white chef hat and white jacket holding a ladle
+nhan-vat|nong-dan|Nông dân|a Vietnamese farmer woman wearing a conical hat (non la) and brown ao ba ba shirt holding rice stalks
+nhan-vat|cong-an|Chú công an|a Vietnamese police officer in a green uniform and cap
+nhan-vat|bo-doi|Chú bộ đội|a Vietnamese soldier in an olive green uniform and hat
+nhan-vat|cong-nhan|Công nhân|a Vietnamese worker in blue overalls and a helmet
+nhan-vat|lai-xe|Chú lái xe|a Vietnamese driver holding a steering wheel, wearing a cap
+do-vat|ong-nghe|Ống nghe bác sĩ|a doctor's stethoscope
+do-vat|nhiet-ke|Nhiệt kế|a medical thermometer
+do-vat|ong-tiem|Ống tiêm|a syringe
+do-vat|hop-cap-cuu|Hộp cứu thương|a white first-aid kit box with a red cross
+do-vat|mu-bao-ho-ky-su|Mũ bảo hiểm kỹ sư xây dựng|a yellow construction safety helmet
+do-vat|may-xuc|Máy xúc|a yellow excavator digger
+do-vat|can-cau|Cần cẩu|a construction crane
+do-vat|ban-ve|Bản vẽ và thước|a rolled blueprint and a ruler
+do-vat|bay-xo-vua|Bay và xô vữa|a bricklayer trowel and a bucket
+do-vat|gach|Chồng gạch|a stack of red bricks
+do-vat|chao-dau-bep|Chảo của đầu bếp|a frying pan with a long handle
+do-vat|mu-dau-bep|Mũ đầu bếp|a tall white chef hat
+do-vat|va-muc-canh|Vá múc canh|a ladle and a spatula
+do-vat|liem-non-la|Liềm và nón lá nhà nông|a curved sickle with a wooden handle lying next to a Vietnamese conical leaf hat (non la)
+do-vat|cuoc|Cái cuốc|a hoe with a wooden handle
+do-vat|bong-lua|Bông lúa|a bundle of golden rice stalks
+do-vat|xe-cuu-thuong|Xe cứu thương|a white ambulance van with a red cross, no face
+do-vat|xe-cuu-hoa|Xe cứu hỏa|a red fire truck, no face
+do-vat|coi-cong-an|Còi của chú công an|a police whistle
+do-vat|bang-phan|Bảng và phấn|a small blackboard with chalk
+do-vat|may-tinh|Máy tính|a laptop computer
+do-vat|bua-co-le|Búa và cờ lê|a hammer and a wrench
+do-vat|kim-chi|Kim chỉ may|a sewing needle with thread and a spool
+do-vat|may-anh|Máy ảnh|a camera
+do-vat|nha-dang-xay|Nhà đang xây|a house under construction with scaffolding
+do-vat|xe-ben|Xe ben|a yellow dump truck
+do-vat|binh-tuoi|Bình tưới nước|a watering can
+do-vat|tap-de|Tạp dề|a white apron
+[dong-vat|Động vật]
+nen|trang-trai|Trang trại|a cheerful farm with a red barn, fence and green fields, NO animals
+nen|rung|Rừng|a lush green forest with tall trees and a path, NO animals
+nen|dai-duong|Đại dương|an underwater ocean scene with corals and sand, NO animals
+nhan-vat|cho|Con chó|a cute puppy dog standing, wagging tail
+nhan-vat|meo|Con mèo|a cute kitten cat sitting
+nhan-vat|ga|Con gà|a cute rooster standing
+nhan-vat|vit|Con vịt|a cute yellow duck
+nhan-vat|trau|Con trâu|a cute Vietnamese water buffalo
+nhan-vat|voi|Con voi|a cute elephant raising its trunk
+nhan-vat|su-tu|Sư tử|a cute lion with a mane
+nhan-vat|ca|Con cá|a cute colorful fish with bubbles
+do-vat|khuc-xuong|Khúc xương cho chó|a dog bone treat, plain bone shape, NO face
+do-vat|bat-an|Bát ăn cho thú cưng|a pet food bowl with kibble
+do-vat|long-chim|Lồng chim|a bird cage, empty
+do-vat|to-chim|Tổ chim|a bird nest with three eggs
+do-vat|trung|Quả trứng|three brown chicken eggs
+do-vat|co-kho|Cỏ khô|a bundle of hay
+do-vat|chuong-ga|Chuồng gà|a wooden chicken coop, empty
+do-vat|ao-ca|Ao cá|a small pond with lily pads, empty of animals
+do-vat|be-ca|Bể cá|a fish tank with plants, empty of fish
+do-vat|chuoi|Nải chuối|a bunch of bananas
+do-vat|ca-rot|Củ cà rốt|a few carrots
+do-vat|thit|Miếng thịt|a piece of meat steak
+do-vat|ca-moi|Con cá nhỏ làm mồi|a small plain fish snack shape, no face, no eyes
+do-vat|hat-thoc|Thóc|a pile of rice grains
+do-vat|cay-co|Cây cỏ|a tuft of grass
+do-vat|dau-chan|Dấu chân thú|animal paw prints and hoof prints
+do-vat|long-vu|Lông vũ|three colorful feathers
+do-vat|cap-sung|Cặp sừng|a pair of horns, plain
+do-vat|vo-oc|Vỏ ốc|a spiral snail shell
+do-vat|mat-ong|Hũ mật ong|a honey jar with a honey dipper
+do-vat|chai-sua|Chai sữa|a glass bottle of milk
+do-vat|hang-dong|Hang động|a cave entrance in rocks
+do-vat|cay-rung|Cây rừng|a big tree
+do-vat|tang-da|Tảng đá|a gray rock
+do-vat|day-dat-cho|Dây dắt chó|a dog leash and collar
+do-vat|nha-cho|Nhà chó|a small wooden dog house, empty
+do-vat|khay-ve-sinh|Khay vệ sinh mèo|a cat litter tray
+do-vat|cuon-len|Cuộn len|a ball of yarn
+do-vat|chuong-co|Chuông cổ|a small bell on a ribbon
+[thuc-vat|Thực vật]
+nen|vuon-rau|Vườn rau|a vegetable garden with beds of vegetables and a fence, NO people
+nen|vuon-hoa|Vườn hoa|a colorful flower garden with paths, NO people
+nen|vuon-cay-an-qua|Vườn cây ăn quả|an orchard with fruit trees, NO people
+nhan-vat|be-trong-cay|Bé trồng cây|a Vietnamese kid planting a seedling with a small shovel
+nhan-vat|be-tuoi-cay|Bé tưới cây|a Vietnamese kid watering plants with a watering can
+nhan-vat|be-hai-qua|Bé hái quả|a Vietnamese kid picking fruit from a tree
+nhan-vat|be-ngam-hoa|Bé ngắm hoa|a Vietnamese kid smelling a flower
+nhan-vat|be-gieo-hat|Bé gieo hạt|a Vietnamese kid sowing seeds into a pot
+nhan-vat|be-nhat-la|Bé nhặt lá|a Vietnamese kid with fallen leaves
+nhan-vat|bac-nong-dan|Bác nông dân trồng rau|a Vietnamese farmer in a conical hat tending vegetables
+nhan-vat|be-an-trai-cay|Bé ăn trái cây|a Vietnamese kid eating a slice of fruit
+do-vat|hat-dau-nay-mam|Hạt đậu nảy mầm|a bean seed sprouting with a small root
+do-vat|mam-cay|Mầm cây|a tiny seedling
+do-vat|cay-con|Cây non|a young plant in soil
+do-vat|cay-to|Cây lớn|a big tree with green crown
+do-vat|hoa-hong|Hoa hồng|a red rose
+do-vat|hoa-huong-duong|Hoa hướng dương|a sunflower
+do-vat|hoa-sen|Hoa sen|a pink lotus flower with leaf
+do-vat|hoa-cuc|Hoa cúc|a daisy flower
+do-vat|la-cay|Lá cây|a few green leaves
+do-vat|re-cay|Rễ cây|a plant with visible roots in cross-section soil
+do-vat|than-cay|Thân cây|a tree trunk
+do-vat|cu-ca-rot|Củ cà rốt|a bunch of carrots
+do-vat|rau-cai|Rau cải|a green leafy cabbage
+do-vat|ca-chua|Cà chua|red tomatoes
+do-vat|dua-leo|Dưa leo|cucumbers
+do-vat|bap-ngo|Bắp ngô|corn cobs
+do-vat|qua-chuoi|Quả chuối|bananas
+do-vat|tao|Quả táo|a red apple
+do-vat|cam|Quả cam|an orange
+do-vat|xoai|Quả xoài|a mango
+do-vat|buoi|Quả bưởi|a pomelo
+do-vat|dua-hau|Dưa hấu|a watermelon slice
+do-vat|chau-cay|Chậu cây|a small potted plant
+do-vat|binh-tuoi-cay|Bình tưới|a watering can
+do-vat|xeng-nho|Xẻng nhỏ|a small garden shovel
+do-vat|tui-hat-giong|Túi hạt giống|a packet of seeds with plain picture, no text
+do-vat|xuong-rong|Xương rồng|a cactus in a pot
+[ptgt|Phương tiện giao thông]
+nen|duong-pho|Đường phố|a city street with road, crossing and traffic lights, NO vehicles, NO people
+nen|ben-xe-san-bay|Bến xe và sân bay|an airport and bus-stop scene, NO vehicles, NO people
+nen|song-bien|Sông biển|a river and sea harbor with a pier, NO vehicles, NO people
+nhan-vat|be-di-bo|Bé đi bộ qua đường|a Vietnamese kid crossing at a crosswalk holding a parent's hand
+nhan-vat|be-doi-mu|Bé đội mũ bảo hiểm|a Vietnamese kid wearing a bike helmet
+nhan-vat|chu-canh-sat|Chú cảnh sát giao thông|a Vietnamese traffic police officer in a cream uniform directing traffic
+nhan-vat|bac-tai-xe|Bác tài xế|a Vietnamese bus driver at the wheel
+nhan-vat|chu-phi-cong|Chú phi công|a Vietnamese pilot in uniform and cap
+nhan-vat|chu-thuyen-truong|Chú thuyền trưởng|a Vietnamese ship captain in white uniform and cap
+nhan-vat|be-ngoi-xe|Bé ngồi xe|a Vietnamese kid sitting in a car seat with a seat belt
+nhan-vat|be-dap-xe|Bé đạp xe đạp|a Vietnamese kid riding a small bicycle with helmet
+do-vat|xe-dap|Xe đạp|a bicycle
+do-vat|xe-may|Xe máy|a motorbike
+do-vat|oto|Ô tô con|a small family car
+do-vat|xe-buyt|Xe buýt|a city bus
+do-vat|xe-tai|Xe tải|a truck
+do-vat|xe-cuu-thuong|Xe cứu thương|an ambulance
+do-vat|xe-cuu-hoa|Xe cứu hỏa|a fire truck
+do-vat|tau-hoa|Tàu hỏa|a train with carriages
+do-vat|may-bay|Máy bay|an airplane
+do-vat|truc-thang|Trực thăng|a helicopter
+do-vat|tau-thuy|Tàu thủy|a ship
+do-vat|thuyen|Thuyền|a small wooden boat
+do-vat|ca-no|Ca nô|a speedboat
+do-vat|khinh-khi-cau|Khinh khí cầu|a hot air balloon
+do-vat|xich-lo|Xích lô|a cyclo tricycle
+do-vat|den-giao-thong|Đèn giao thông|a traffic light
+do-vat|bien-cam|Biển báo cấm|a red circular no-entry traffic sign with a white bar, no text
+do-vat|bien-nguy-hiem|Biển báo nguy hiểm|a red-bordered yellow warning triangle sign, plain
+do-vat|vach-sang-duong|Vạch sang đường|a zebra crossing stripes
+do-vat|mu-bao-hiem|Mũ bảo hiểm|a motorbike helmet
+do-vat|day-an-toan|Dây an toàn|a car seat belt
+do-vat|banh-xe|Bánh xe|a wheel
+do-vat|vo-lang|Vô lăng|a steering wheel
+do-vat|ben-tau|Bến tàu|a small pier dock
+do-vat|nha-ga|Nhà ga|a small train station
+do-vat|cay-xang|Cây xăng|a petrol pump
+do-vat|cay-cau|Cây cầu|a bridge
+do-vat|xe-ben|Xe ben|a dump truck
+[httn|Nước và hiện tượng tự nhiên]
+nen|troi-mua|Trời mưa|a rainy day landscape with clouds and puddles, NO people
+nen|bo-bien|Bờ biển|a sunny beach with waves and sand, NO people
+nen|nui-song|Núi và sông|mountains with a river and waterfall, NO people
+nhan-vat|be-di-mua|Bé che ô đi mưa|a Vietnamese kid with a raincoat and umbrella in the rain
+nhan-vat|be-choi-nuoc|Bé chơi nước|a Vietnamese kid splashing in a puddle in rain boots
+nhan-vat|be-di-nang|Bé đội mũ đi nắng|a Vietnamese kid in a sun hat on a sunny day
+nhan-vat|be-ao-am|Bé mặc áo ấm|a Vietnamese kid in a warm coat and scarf in cold weather
+nhan-vat|be-thoi-bong|Bé thổi bong bóng|a Vietnamese kid blowing soap bubbles
+nhan-vat|be-uong-nuoc|Bé uống nước|a Vietnamese kid drinking from a cup
+nhan-vat|be-tat-voi|Bé tắt vòi nước|a Vietnamese kid turning off a tap
+nhan-vat|be-tha-dieu|Bé thả diều|a Vietnamese kid flying a kite
+do-vat|giot-nuoc|Giọt nước|a single blue water drop shape (object, no face)
+do-vat|dam-may|Đám mây|a fluffy white cloud
+do-vat|may-mua|Mây mưa|a gray rain cloud with rain drops
+do-vat|mat-troi|Mặt trời|a bright sun with rays (no face)
+do-vat|cau-vong|Cầu vồng|a rainbow
+do-vat|tia-set|Tia chớp|a lightning bolt
+do-vat|gio-la-bay|Gió và lá bay|wind swirl lines with flying leaves
+do-vat|bong-tuyet|Bông tuyết|a snowflake
+do-vat|trang-sao|Mặt trăng và sao|a crescent moon with stars
+do-vat|song-bien|Sóng biển|ocean waves
+do-vat|suoi|Dòng suối|a small stream with rocks
+do-vat|thac-nuoc|Thác nước|a waterfall
+do-vat|hat-suong|Hạt sương|dew drops on a leaf
+do-vat|o-du|Cái ô|a colorful umbrella
+do-vat|ao-mua|Áo mưa|a raincoat with hood
+do-vat|ung|Ủng đi mưa|a pair of rain boots
+do-vat|nhiet-ke-ngoai-troi|Nhiệt kế ngoài trời|a thermometer on a board
+do-vat|xo-nuoc|Xô nước|a bucket of water
+do-vat|voi-nuoc|Vòi nước|a water tap with a drop
+do-vat|coc-nuoc|Cốc nước|a glass of water
+do-vat|chai-nuoc|Chai nước|a bottle of water
+do-vat|noi-nuoc-soi|Nồi nước sôi|a pot with steam
+do-vat|vien-da|Viên đá|ice cubes
+do-vat|bai-cat|Bãi cát|a pile of sand with a bucket and spade
+do-vat|vo-so|Vỏ sò|a seashell
+do-vat|dieu|Cánh diều|a kite
+do-vat|chong-chong|Chong chóng|a pinwheel
+do-vat|bong-bong-xa-phong|Bong bóng xà phòng|soap bubbles
+[bh-qh|Bác Hồ - Quê hương bé]
+nen|nha-san|Nhà sàn Bác Hồ|the Vietnamese stilt house of Uncle Ho with garden and pond, NO people
+nen|lang-que|Làng quê|a Vietnamese countryside village with bamboo, pond and rice fields, NO people
+nen|ho-guom|Hồ Gươm|Hoan Kiem lake with the red Huc bridge and Turtle Tower, NO people
+nhan-vat|bac-ho|Bác Hồ|a kind elderly Vietnamese leader with a thin white beard in a simple khaki suit, gentle smile, respectful illustration
+nhan-vat|be-chao-bac|Bé chào Bác|a Vietnamese kid with a red neckerchief saluting
+nhan-vat|be-mua|Bé múa|a Vietnamese kid in a traditional ao dai dancing
+nhan-vat|be-ao-dai|Bé mặc áo dài|a Vietnamese girl in a pink ao dai
+nhan-vat|be-ao-ba-ba|Bé mặc áo bà ba|a Vietnamese kid in a brown ao ba ba and conical hat
+nhan-vat|be-cam-co|Bé cầm cờ|a Vietnamese kid holding the Vietnamese flag
+nhan-vat|be-khan-do|Bé quàng khăn đỏ|a Vietnamese kid with a red scarf
+nhan-vat|cac-be-hat-mua|Các bé hát múa|a group of Vietnamese kids singing and dancing
+do-vat|co-do-sao-vang|Cờ đỏ sao vàng|the Vietnamese flag: red field with a yellow star
+do-vat|nha-san-nho|Nhà sàn nhỏ|a small stilt house
+do-vat|ao-dai|Áo dài|a Vietnamese ao dai dress
+do-vat|non-la|Nón lá|a conical hat
+do-vat|chua-mot-cot|Chùa Một Cột|the One Pillar Pagoda of Hanoi
+do-vat|lang-bac|Lăng Bác|Ho Chi Minh mausoleum building
+do-vat|thap-rua|Tháp Rùa|Turtle Tower on the lake
+do-vat|cau-the-huc|Cầu Thê Húc|the red Huc bridge
+do-vat|hoa-sen|Hoa sen|a lotus flower
+do-vat|trong-dong|Trống đồng|a bronze drum with sun pattern
+do-vat|banh-chung|Bánh chưng|a square green banh chung rice cake tied with string
+do-vat|banh-giay|Bánh giầy|a round white banh giay rice cake
+do-vat|mam-ngu-qua|Mâm ngũ quả|a five-fruit tray for Tet
+do-vat|dan-bau|Đàn bầu|a Vietnamese monochord dan bau
+do-vat|sao-truc|Sáo trúc|a bamboo flute
+do-vat|gieng-lang|Giếng làng|a village well
+do-vat|cay-da|Cây đa|a banyan tree
+do-vat|canh-dong-lua|Cánh đồng lúa|a rice paddy patch
+do-vat|cai-cay|Cái cày|a wooden plough
+do-vat|thuyen-thung|Thuyền thúng|a round basket boat
+do-vat|cau-tre|Cây cầu tre|a bamboo bridge
+do-vat|den-long-hoi-an|Đèn lồng Hội An|colorful silk lanterns
+do-vat|khan-quang-do|Khăn quàng đỏ|a red neckerchief
+do-vat|hoa-dao|Hoa đào|peach blossoms
+do-vat|hoa-mai|Hoa mai|yellow apricot blossoms
+do-vat|bo-am-tra|Bộ ấm trà|a tea set with a teapot
+do-vat|bo-hoa|Bó hoa dâng Bác|a bouquet of flowers
+do-vat|sach-bia-do|Quyển sách bìa đỏ|a book with a red cover, no text
+[truong-th|Trường tiểu học]
+nen|lop-1|Lớp 1|a primary school classroom with desks and a green board, NO people
+nen|san-truong-th|Sân trường tiểu học|a primary school yard with a flagpole and building, NO people
+nen|thu-vien|Thư viện|a school library with bookshelves and reading tables, NO people
+nhan-vat|hoc-sinh-nam|Học sinh nam lớp 1|a Vietnamese boy 6 years old in school uniform with red neckerchief and backpack
+nhan-vat|hoc-sinh-nu|Học sinh nữ lớp 1|a Vietnamese girl 6 years old in school uniform with red neckerchief and backpack
+nhan-vat|co-giao-tieu-hoc|Cô giáo tiểu học|a Vietnamese primary school teacher woman in an ao dai or blouse with a pointer
+nhan-vat|thay-giao|Thầy giáo|a Vietnamese male teacher in a shirt holding a book
+nhan-vat|be-di-hoc|Bé đi học|a Vietnamese kid walking to school with a backpack
+nhan-vat|be-doc-sach|Bé đọc sách|a Vietnamese kid reading a book
+nhan-vat|be-viet-bai|Bé viết bài|a Vietnamese kid writing at a desk
+nhan-vat|be-gio-tay|Bé giơ tay phát biểu|a Vietnamese kid raising a hand
+do-vat|cap-sach-lop-1|Cặp sách lớp 1|a school backpack
+do-vat|hop-but|Hộp bút|a pencil case
+do-vat|vo-viet|Quyển vở|a notebook with a ruled cover, no text
+do-vat|but-muc|Bút mực|a fountain pen
+do-vat|thuoc-ke|Thước kẻ|a ruler, no numbers
+do-vat|cuc-tay|Cục tẩy|an eraser
+do-vat|got-but-chi|Gọt bút chì|a pencil sharpener
+do-vat|but-chi|Bút chì|pencils
+do-vat|sach-giao-khoa|Sách giáo khoa|a stack of textbooks, no text
+do-vat|bang-den|Bảng đen|a classroom chalkboard
+do-vat|ban-hoc|Bàn học|a student desk with chair
+do-vat|trong-truong|Trống trường|a school drum
+do-vat|chuong-tieu-hoc|Chuông trường|a school bell
+do-vat|cot-co|Cột cờ|a flagpole with the Vietnamese flag
+do-vat|khan-quang-do|Khăn quàng đỏ|a red neckerchief
+do-vat|dong-phuc|Đồng phục|a school uniform, shirt and shorts
+do-vat|giay-hoc-sinh|Giày học sinh|school shoes
+do-vat|binh-nuoc|Bình nước|a kids water bottle
+do-vat|hop-com|Hộp cơm|a lunch box
+do-vat|ba-lo|Ba lô|a backpack
+do-vat|gia-sach|Giá sách|a bookshelf with books
+do-vat|ban-do|Bản đồ Việt Nam|a map of Vietnam, no text
+do-vat|qua-dia-cau|Quả địa cầu|a globe
+do-vat|kinh-lup|Kính lúp|a magnifying glass
+do-vat|dong-ho|Đồng hồ|a clock
+do-vat|giay-khen|Giấy khen|a certificate with a ribbon, blank
+do-vat|hoa-diem-muoi|Bông hoa điểm mười|a red flower rosette
+do-vat|the-ten|Thẻ tên|a blank name tag with a string
+do-vat|cong-truong|Cổng trường tiểu học|a primary school gate

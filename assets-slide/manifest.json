@@ -1,0 +1,5074 @@
+{
+ "phienBan": 1,
+ "tong": 449,
+ "demTheoChuDe": {
+  "chung": 59,
+  "truong-mam-non": 38,
+  "ban-than": 37,
+  "gia-dinh": 39,
+  "nghe-nghiep": 41,
+  "dong-vat": 40,
+  "thuc-vat": 38,
+  "ptgt": 39,
+  "httn": 39,
+  "bh-qh": 39,
+  "truong-th": 40
+ },
+ "chuDe": [
+  {
+   "slug": "truong-mam-non",
+   "ten": "Trường mầm non"
+  },
+  {
+   "slug": "ban-than",
+   "ten": "Bản thân"
+  },
+  {
+   "slug": "gia-dinh",
+   "ten": "Gia đình"
+  },
+  {
+   "slug": "nghe-nghiep",
+   "ten": "Nghề nghiệp"
+  },
+  {
+   "slug": "dong-vat",
+   "ten": "Động vật"
+  },
+  {
+   "slug": "thuc-vat",
+   "ten": "Thực vật"
+  },
+  {
+   "slug": "ptgt",
+   "ten": "Phương tiện giao thông"
+  },
+  {
+   "slug": "httn",
+   "ten": "Nước và hiện tượng tự nhiên"
+  },
+  {
+   "slug": "bh-qh",
+   "ten": "Bác Hồ - Quê hương bé"
+  },
+  {
+   "slug": "truong-th",
+   "ten": "Trường tiểu học"
+  }
+ ],
+ "mucs": [
+  {
+   "id": "chung/khung/tieu-de",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Khung tiêu đề",
+   "prompt": "a decorative rounded title banner frame, empty inside (blank cream panel), with small stars and a ribbon, colorful border",
+   "the": [
+    "khung",
+    "tiêu đề"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/chung/khung/tieu-de.png"
+  },
+  {
+   "id": "chung/khung/noi-dung",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Khung nội dung",
+   "prompt": "a rounded rectangular picture frame with thick colorful playful border, empty blank cream center, small leaves and stars at corners",
+   "the": [
+    "khung",
+    "nội dung"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/khung/bong-noi",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Khung bong bóng lời",
+   "prompt": "a big friendly speech bubble, blank white center, soft yellow outline",
+   "the": [
+    "khung",
+    "lời nói"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/huy-hieu/tot",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Huy hiệu bé ngoan",
+   "prompt": "a round medal badge with a ribbon, gold with a simple big star in the middle, no face",
+   "the": [
+    "huy hiệu",
+    "khen"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/huy-hieu/cup",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Cúp vàng",
+   "prompt": "a small shiny golden trophy cup with two handles, no face",
+   "the": [
+    "huy hiệu",
+    "cúp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/huy-hieu/hoa-diem-muoi",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Hoa điểm mười",
+   "prompt": "a red flower-shaped award rosette with two ribbons and a golden center, no face",
+   "the": [
+    "huy hiệu",
+    "khen"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/sao/vang",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Ngôi sao vàng",
+   "prompt": "one big golden five-point star with rounded corners and a small sparkle, no face",
+   "the": [
+    "sao"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/chung/sao/vang.png"
+  },
+  {
+   "id": "chung/sao/lap-lanh",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Chùm sao lấp lánh",
+   "prompt": "a cluster of three sparkling yellow stars of different sizes with tiny sparkles, no face",
+   "the": [
+    "sao",
+    "lấp lánh"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/sao/vien",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Ngôi sao rỗng viền",
+   "prompt": "one five-point star outline only, white inside, thick orange outline, no face",
+   "the": [
+    "sao"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chuong/vang",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Chuông vàng",
+   "prompt": "one golden hand bell (rung-chuông-vàng style) with a short wooden handle, shiny, no face",
+   "the": [
+    "chuông",
+    "rung chuông vàng"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/chung/chuong/vang.png"
+  },
+  {
+   "id": "chung/chuong/rung",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Chuông vàng đang rung",
+   "prompt": "one golden hand bell tilted and ringing, with three curved motion lines on each side, no face",
+   "the": [
+    "chuông",
+    "rung chuông vàng"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/o-dap-an/do",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Ô đáp án Đỏ",
+   "prompt": "a glossy rounded square answer button, solid bright RED, blank center (no letter), thick darker-red rim",
+   "the": [
+    "đáp án",
+    "đỏ"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/chung/o-dap-an/do.png"
+  },
+  {
+   "id": "chung/o-dap-an/tim",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Ô đáp án Tím",
+   "prompt": "a glossy rounded square answer button, solid bright PURPLE, blank center (no letter), thick darker-purple rim",
+   "the": [
+    "đáp án",
+    "tím"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/o-dap-an/xanh-la",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Ô đáp án Xanh lá",
+   "prompt": "a glossy rounded square answer button, solid bright GREEN, blank center (no letter), thick darker-green rim",
+   "the": [
+    "đáp án",
+    "xanh lá"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/o-dap-an/vang",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Ô đáp án Vàng",
+   "prompt": "a glossy rounded square answer button, solid bright YELLOW, blank center (no letter), thick darker-orange rim",
+   "the": [
+    "đáp án",
+    "vàng"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/nut/tien",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Nút tới",
+   "prompt": "a round glossy orange button with a big white right-pointing arrow, no face",
+   "the": [
+    "nút",
+    "tới"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/nut/lui",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Nút lui",
+   "prompt": "a round glossy orange button with a big white left-pointing arrow, no face",
+   "the": [
+    "nút",
+    "lui"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/nut/phat",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Nút phát",
+   "prompt": "a round glossy green button with a white play triangle, no face",
+   "the": [
+    "nút",
+    "phát"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/nut/loa",
+   "chuDe": "chung",
+   "loai": "chung",
+   "tenVi": "Nút loa",
+   "prompt": "a round glossy yellow button with a white speaker icon with sound waves, no face",
+   "the": [
+    "nút",
+    "loa"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/0",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 0",
+   "prompt": "a single big bubbly cartoon digit \"0\" (the number zero) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "0"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/1",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 1",
+   "prompt": "a single big bubbly cartoon digit \"1\" (the number one) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "1"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/2",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 2",
+   "prompt": "a single big bubbly cartoon digit \"2\" (the number two) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "2"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/3",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 3",
+   "prompt": "a single big bubbly cartoon digit \"3\" (the number three) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "3"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/4",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 4",
+   "prompt": "a single big bubbly cartoon digit \"4\" (the number four) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "4"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/5",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 5",
+   "prompt": "a single big bubbly cartoon digit \"5\" (the number five) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "5"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/6",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 6",
+   "prompt": "a single big bubbly cartoon digit \"6\" (the number six) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "6"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/7",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 7",
+   "prompt": "a single big bubbly cartoon digit \"7\" (the number seven) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "7"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/8",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 8",
+   "prompt": "a single big bubbly cartoon digit \"8\" (the number eight) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "8"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/9",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 9",
+   "prompt": "a single big bubbly cartoon digit \"9\" (the number nine) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "9"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/so/10",
+   "chuDe": "chung",
+   "loai": "so",
+   "tenVi": "Số 10",
+   "prompt": "a single big bubbly cartoon digit \"10\" (the number ten) in bright rainbow-colored 3D-ish style with a thick outline, the digit is the ONLY text in the image",
+   "the": [
+    "số",
+    "10"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/a",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ a",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"a\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "a"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/aw",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ ă",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"ă\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "ă"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/aa",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ â",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"â\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "â"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/b",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ b",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"b\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "b"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/c",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ c",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"c\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "c"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/d",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ d",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"d\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "d"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/dd",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ đ",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"đ\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "đ"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/e",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ e",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"e\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "e"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/ee",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ ê",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"ê\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "ê"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/g",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ g",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"g\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "g"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/h",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ h",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"h\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "h"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/i",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ i",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"i\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "i"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/k",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ k",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"k\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "k"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/l",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ l",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"l\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "l"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/m",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ m",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"m\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "m"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/n",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ n",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"n\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "n"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/o",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ o",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"o\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "o"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/oo",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ ô",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"ô\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "ô"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/ow",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ ơ",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"ơ\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "ơ"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/p",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ p",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"p\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "p"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/q",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ q",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"q\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "q"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/r",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ r",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"r\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "r"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/s",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ s",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"s\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "s"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/t",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ t",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"t\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "t"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/u",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ u",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"u\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "u"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/uw",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ ư",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"ư\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "ư"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/v",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ v",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"v\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "v"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/x",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ x",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"x\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "x"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "chung/chu/y",
+   "chuDe": "chung",
+   "loai": "chu",
+   "tenVi": "Chữ y",
+   "prompt": "a single big bubbly cartoon lowercase Vietnamese letter \"y\" in print (school handwriting-free, simple round print form) with correct Vietnamese diacritics exactly as shown, bright colors and a thick outline, the letter is the ONLY text in the image",
+   "the": [
+    "chữ cái",
+    "y"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nen/lop-hoc",
+   "chuDe": "truong-mam-non",
+   "loai": "nen",
+   "tenVi": "Lớp học mầm non",
+   "prompt": "a bright Vietnamese kindergarten classroom interior with small tables, shelves of toys and books, windows with bunting flags, NO people, and NO faces on any decoration or object (no smiling sun, no smiling clouds, no eyes on toys)",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/truong-mam-non/nen/lop-hoc.webp",
+   "kiemTra": {
+    "w": 1280,
+    "h": 720,
+    "kind": "scene"
+   }
+  },
+  {
+   "id": "truong-mam-non/nen/san-truong",
+   "chuDe": "truong-mam-non",
+   "loai": "nen",
+   "tenVi": "Sân trường",
+   "prompt": "a kindergarten schoolyard with a slide, swings, flowers and a green gate, NO people",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nen/trung-thu",
+   "chuDe": "truong-mam-non",
+   "loai": "nen",
+   "tenVi": "Đêm Trung thu",
+   "prompt": "a cheerful Mid-Autumn festival night scene with hanging star lanterns and a big full moon, NO people",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nhan-vat/co-giao",
+   "chuDe": "truong-mam-non",
+   "loai": "nhan-vat",
+   "tenVi": "Cô giáo",
+   "prompt": "a young Vietnamese kindergarten teacher woman in a pretty pastel blouse and long skirt, waving kindly",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nhan-vat/be-trai",
+   "chuDe": "truong-mam-non",
+   "loai": "nhan-vat",
+   "tenVi": "Bé trai",
+   "prompt": "a Vietnamese boy 5 years old in school uniform shirt and shorts with a small backpack, waving",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nhan-vat/be-gai",
+   "chuDe": "truong-mam-non",
+   "loai": "nhan-vat",
+   "tenVi": "Bé gái",
+   "prompt": "a Vietnamese girl 5 years old with two pigtails in a school dress, waving",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nhan-vat/be-cung-choi",
+   "chuDe": "truong-mam-non",
+   "loai": "nhan-vat",
+   "tenVi": "Hai bé chơi cùng nhau",
+   "prompt": "two Vietnamese preschool kids holding hands and playing together",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nhan-vat/be-xep-hang",
+   "chuDe": "truong-mam-non",
+   "loai": "nhan-vat",
+   "tenVi": "Các bé xếp hàng",
+   "prompt": "a line of four Vietnamese preschool kids in a queue",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nhan-vat/be-an-com",
+   "chuDe": "truong-mam-non",
+   "loai": "nhan-vat",
+   "tenVi": "Bé ăn cơm",
+   "prompt": "a Vietnamese preschool child sitting and eating happily with a spoon",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nhan-vat/be-rua-tay",
+   "chuDe": "truong-mam-non",
+   "loai": "nhan-vat",
+   "tenVi": "Bé rửa tay",
+   "prompt": "a Vietnamese preschool child washing hands at a small sink",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/nhan-vat/be-chao-co",
+   "chuDe": "truong-mam-non",
+   "loai": "nhan-vat",
+   "tenVi": "Bé chào cô",
+   "prompt": "a Vietnamese preschool child bowing politely with crossed arms to greet",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/cap-sach",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Cặp sách",
+   "prompt": "a small kids school backpack",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/but-chi",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Bút chì",
+   "prompt": "a yellow pencil",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/but-sap",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Hộp bút sáp màu",
+   "prompt": "an open box of colorful wax crayons",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/sach",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Quyển sách",
+   "prompt": "a closed picture book with colorful cover",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/ban-ghe",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Bàn ghế mầm non",
+   "prompt": "a small kids table with two small chairs",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/bang",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Bảng",
+   "prompt": "a classroom blackboard on a wooden stand, blank",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/ghe-be",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Ghế bé",
+   "prompt": "a small wooden kids chair",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/bup-be",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Búp bê",
+   "prompt": "a rag doll toy with simple stitched dot eyes",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/xep-hinh",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Đồ chơi xếp hình",
+   "prompt": "a stack of colorful wooden building blocks",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/trong",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Trống",
+   "prompt": "a small kids drum with two sticks",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/den-long",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Đèn lồng ngôi sao",
+   "prompt": "a red paper star lantern with a stick handle",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/banh-trung-thu",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Bánh Trung thu",
+   "prompt": "a round mooncake and a cut half showing the filling",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/mam-co",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Mâm cỗ Trung thu",
+   "prompt": "a Mid-Autumn tray with a pomelo, mooncakes and fruit",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/mat-na",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Mặt nạ Trung thu",
+   "prompt": "a colorful paper festival mask",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/ly-nuoc",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Ly nước",
+   "prompt": "a plastic kids cup with a little water",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/khan-mat",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Khăn mặt",
+   "prompt": "a folded small towel",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/xa-phong",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Xà phòng",
+   "prompt": "a bar of soap with bubbles",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/ke-giay",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Kệ để giày",
+   "prompt": "a small shoe rack with kids shoes",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/keo",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Kéo thiếu nhi",
+   "prompt": "safe kids scissors with round tips",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/ho-dan",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Hồ dán",
+   "prompt": "a glue stick",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/mau-nuoc",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Màu nước",
+   "prompt": "a watercolor palette with a paintbrush",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/cong-truong",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Cổng trường",
+   "prompt": "a cheerful kindergarten gate arch with flowers, NO people",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/cot-co",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Cột cờ và cờ đỏ sao vàng",
+   "prompt": "a flagpole with the Vietnamese national flag (red with yellow star)",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/cau-truot",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Cầu trượt",
+   "prompt": "a playground slide",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/xich-du",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Xích đu",
+   "prompt": "a playground swing",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/bong",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Quả bóng",
+   "prompt": "a colorful kids ball",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-mam-non/do-vat/chuong-truong",
+   "chuDe": "truong-mam-non",
+   "loai": "do-vat",
+   "tenVi": "Chuông trường",
+   "prompt": "a school hand bell",
+   "the": [
+    "trường mầm non"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nen/phong-ngu",
+   "chuDe": "ban-than",
+   "loai": "nen",
+   "tenVi": "Phòng ngủ của bé",
+   "prompt": "a cozy kid bedroom with a small bed, toys and a window, NO people",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nen/guong",
+   "chuDe": "ban-than",
+   "loai": "nen",
+   "tenVi": "Góc gương và tủ áo",
+   "prompt": "a kids dressing corner with a mirror and wardrobe, NO people",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nen/san-choi",
+   "chuDe": "ban-than",
+   "loai": "nen",
+   "tenVi": "Sân chơi công viên",
+   "prompt": "a sunny playground park with slide and trees, NO people",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nhan-vat/be-trai-dung",
+   "chuDe": "ban-than",
+   "loai": "nhan-vat",
+   "tenVi": "Bé trai đứng",
+   "prompt": "a Vietnamese boy 5 years old standing, casual shirt and shorts, smiling",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nhan-vat/be-gai-dung",
+   "chuDe": "ban-than",
+   "loai": "nhan-vat",
+   "tenVi": "Bé gái đứng",
+   "prompt": "a Vietnamese girl 5 years old standing, cute dress, smiling",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nhan-vat/be-danh-rang",
+   "chuDe": "ban-than",
+   "loai": "nhan-vat",
+   "tenVi": "Bé đánh răng",
+   "prompt": "a Vietnamese kid brushing teeth with a toothbrush",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nhan-vat/be-tam",
+   "chuDe": "ban-than",
+   "loai": "nhan-vat",
+   "tenVi": "Bé tắm",
+   "prompt": "a Vietnamese kid in a bath with soap bubbles",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nhan-vat/be-ngu",
+   "chuDe": "ban-than",
+   "loai": "nhan-vat",
+   "tenVi": "Bé ngủ",
+   "prompt": "a Vietnamese kid sleeping in bed under a blanket",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nhan-vat/be-tap-the-duc",
+   "chuDe": "ban-than",
+   "loai": "nhan-vat",
+   "tenVi": "Bé tập thể dục",
+   "prompt": "a Vietnamese kid doing morning exercise with arms up",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nhan-vat/be-khoc",
+   "chuDe": "ban-than",
+   "loai": "nhan-vat",
+   "tenVi": "Bé khóc",
+   "prompt": "a Vietnamese kid sad and crying with tears",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/nhan-vat/be-cuoi",
+   "chuDe": "ban-than",
+   "loai": "nhan-vat",
+   "tenVi": "Bé cười",
+   "prompt": "a Vietnamese kid laughing happily with arms wide",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/mat",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Con mắt",
+   "prompt": "a simple stylized open eye symbol icon only (anatomy diagram style, no cartoon face)",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/tai",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Cái tai",
+   "prompt": "a simple stylized human ear symbol icon",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/mui",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Cái mũi",
+   "prompt": "a simple stylized human nose symbol icon",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/mieng",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Cái miệng",
+   "prompt": "a simple stylized human mouth with tongue symbol icon",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/ban-tay",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Bàn tay",
+   "prompt": "an open child hand symbol icon",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/ban-chan",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Bàn chân",
+   "prompt": "a child bare foot symbol icon",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/ban-chai",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Bàn chải đánh răng",
+   "prompt": "a toothbrush with toothpaste",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/kem-danh-rang",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Kem đánh răng",
+   "prompt": "a toothpaste tube",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/ao",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Áo phông",
+   "prompt": "a kids T-shirt",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/quan",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Quần short",
+   "prompt": "a pair of kids shorts",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/vay",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Váy bé gái",
+   "prompt": "a girl dress",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/giay",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Đôi giày",
+   "prompt": "a pair of kids sneakers",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/mu",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Mũ",
+   "prompt": "a kids sun hat",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/luoc",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Cái lược",
+   "prompt": "a hair comb",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/guong-soi",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Gương soi",
+   "prompt": "a hand mirror with a pink frame",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/sua-tam",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Sữa tắm",
+   "prompt": "a bottle of body wash with bubbles",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/thuoc-do-chieu-cao",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Thước đo chiều cao",
+   "prompt": "a wall height-measuring chart ruler for kids, no numbers",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/can-suc-khoe",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Cân",
+   "prompt": "a kids bathroom scale",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/sua",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Hộp sữa",
+   "prompt": "a milk carton and a glass of milk",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/rau-cu",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Rau củ",
+   "prompt": "a group of carrots, broccoli and tomatoes",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/trai-cay",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Trái cây",
+   "prompt": "a group of apple, orange, banana",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/gau-bong",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Gấu bông",
+   "prompt": "a plush teddy bear toy with simple stitched dot eyes",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/goi-chan",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Gối và chăn",
+   "prompt": "a pillow with a folded blanket",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/khau-trang",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Khẩu trang",
+   "prompt": "a face mask",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/chai-nuoc",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Chai nước",
+   "prompt": "a water bottle",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ban-than/do-vat/trai-tim",
+   "chuDe": "ban-than",
+   "loai": "do-vat",
+   "tenVi": "Trái tim",
+   "prompt": "a red heart symbol",
+   "the": [
+    "bản thân"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nen/phong-khach",
+   "chuDe": "gia-dinh",
+   "loai": "nen",
+   "tenVi": "Phòng khách",
+   "prompt": "a warm Vietnamese family living room with sofa and tea table, NO people",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nen/nha-bep",
+   "chuDe": "gia-dinh",
+   "loai": "nen",
+   "tenVi": "Nhà bếp",
+   "prompt": "a family kitchen with stove, table and cabinets, NO people",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nen/ngoi-nha",
+   "chuDe": "gia-dinh",
+   "loai": "nen",
+   "tenVi": "Ngôi nhà",
+   "prompt": "a cute Vietnamese house with garden and gate, NO people",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nhan-vat/ong",
+   "chuDe": "gia-dinh",
+   "loai": "nhan-vat",
+   "tenVi": "Ông",
+   "prompt": "a Vietnamese grandfather with gray hair in a casual shirt, smiling",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nhan-vat/ba",
+   "chuDe": "gia-dinh",
+   "loai": "nhan-vat",
+   "tenVi": "Bà",
+   "prompt": "a Vietnamese grandmother with gray hair bun in a simple blouse, smiling",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nhan-vat/bo",
+   "chuDe": "gia-dinh",
+   "loai": "nhan-vat",
+   "tenVi": "Bố",
+   "prompt": "a Vietnamese father in a polo shirt, smiling",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nhan-vat/me",
+   "chuDe": "gia-dinh",
+   "loai": "nhan-vat",
+   "tenVi": "Mẹ",
+   "prompt": "a Vietnamese mother in a blouse, smiling",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nhan-vat/anh-trai",
+   "chuDe": "gia-dinh",
+   "loai": "nhan-vat",
+   "tenVi": "Anh trai",
+   "prompt": "a Vietnamese older brother about 9 years old, casual clothes",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nhan-vat/chi-gai",
+   "chuDe": "gia-dinh",
+   "loai": "nhan-vat",
+   "tenVi": "Chị gái",
+   "prompt": "a Vietnamese older sister about 9 years old, casual clothes",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nhan-vat/em-be",
+   "chuDe": "gia-dinh",
+   "loai": "nhan-vat",
+   "tenVi": "Em bé",
+   "prompt": "a Vietnamese baby sitting in a diaper, smiling",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/nhan-vat/ca-nha",
+   "chuDe": "gia-dinh",
+   "loai": "nhan-vat",
+   "tenVi": "Cả nhà",
+   "prompt": "a whole Vietnamese family of five standing together smiling",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/bat-com",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Bát cơm",
+   "prompt": "a bowl of rice with chopsticks",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/noi-com",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Nồi cơm điện",
+   "prompt": "an electric rice cooker",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/chao",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Cái chảo",
+   "prompt": "a frying pan",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/noi",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Cái nồi",
+   "prompt": "a cooking pot with lid",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/dao-thot",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Dao và thớt",
+   "prompt": "a kitchen knife and a wooden cutting board",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/bep-ga",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Bếp ga",
+   "prompt": "a gas stove",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/tu-lanh",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Tủ lạnh",
+   "prompt": "a refrigerator",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/ti-vi",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Ti vi",
+   "prompt": "a flat screen TV",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/quat",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Quạt điện",
+   "prompt": "an electric standing fan",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/sofa",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Ghế sofa",
+   "prompt": "a sofa",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/giuong",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Cái giường",
+   "prompt": "a bed with pillow",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/tu-quan-ao",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Tủ quần áo",
+   "prompt": "a wardrobe closet",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/may-giat",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Máy giặt",
+   "prompt": "a washing machine",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/choi-hot-rac",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Chổi và hót rác",
+   "prompt": "a broom and dustpan",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/binh-hoa",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Bình hoa",
+   "prompt": "a vase with flowers",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/khung-anh",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Khung ảnh gia đình",
+   "prompt": "a picture frame with a blank center",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/dong-ho-treo-tuong",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Đồng hồ treo tường",
+   "prompt": "a wall clock",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/ban-tho",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Bàn thờ",
+   "prompt": "a small family altar with incense bowl and fruit tray",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/dien-thoai",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Điện thoại",
+   "prompt": "a smartphone",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/banh-sinh-nhat",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Bánh sinh nhật",
+   "prompt": "a birthday cake with candles",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/hop-qua",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Hộp quà",
+   "prompt": "a gift box with ribbon",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/nha-trai-tim",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Ngôi nhà trái tim",
+   "prompt": "a house icon with a heart on it",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/bat-dua",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Bát đũa",
+   "prompt": "bowls and chopsticks on a tray",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/am-tra",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Ấm trà và chén",
+   "prompt": "a teapot and two small cups",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/xe-day-em-be",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Xe đẩy em bé",
+   "prompt": "a baby stroller",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/noi-em-be",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Nôi em bé",
+   "prompt": "a baby crib",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/binh-sua",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Bình sữa",
+   "prompt": "a baby milk bottle",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "gia-dinh/do-vat/cay-canh",
+   "chuDe": "gia-dinh",
+   "loai": "do-vat",
+   "tenVi": "Cây cảnh",
+   "prompt": "a potted plant in a ceramic pot",
+   "the": [
+    "gia đình"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nen/benh-vien",
+   "chuDe": "nghe-nghiep",
+   "loai": "nen",
+   "tenVi": "Bệnh viện",
+   "prompt": "a bright hospital room/waiting hall scene, NO people",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nen/cong-truong",
+   "chuDe": "nghe-nghiep",
+   "loai": "nen",
+   "tenVi": "Công trường",
+   "prompt": "a construction site with a crane and a building frame, NO people",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nen/canh-dong",
+   "chuDe": "nghe-nghiep",
+   "loai": "nen",
+   "tenVi": "Cánh đồng lúa",
+   "prompt": "a green and golden Vietnamese rice field with a farm hut, NO people",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nen/bep-nha-hang",
+   "chuDe": "nghe-nghiep",
+   "loai": "nen",
+   "tenVi": "Bếp nhà hàng",
+   "prompt": "a restaurant kitchen with counters and hanging pans, NO people",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/bac-si",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Bác sĩ",
+   "prompt": "a Vietnamese doctor in a white coat with a stethoscope around the neck, smiling",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/nhan-vat/bac-si.png"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/co-giao-mam-non",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Cô giáo mầm non",
+   "prompt": "a Vietnamese kindergarten teacher woman in a pastel blouse holding a picture book, smiling",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/nhan-vat/co-giao-mam-non.png"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/ky-su-xay-dung",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Kỹ sư xây dựng",
+   "prompt": "a Vietnamese construction engineer in a yellow safety helmet and orange vest holding a blueprint",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/dau-bep",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Đầu bếp",
+   "prompt": "a Vietnamese chef in a white chef hat and white jacket holding a ladle",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/nong-dan",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Nông dân",
+   "prompt": "a Vietnamese farmer woman wearing a conical hat (non la) and brown ao ba ba shirt holding rice stalks",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/cong-an",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Chú công an",
+   "prompt": "a Vietnamese police officer in a green uniform and cap",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/bo-doi",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Chú bộ đội",
+   "prompt": "a Vietnamese soldier in an olive green uniform and hat",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/cong-nhan",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Công nhân",
+   "prompt": "a Vietnamese worker in blue overalls and a helmet",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/nhan-vat/lai-xe",
+   "chuDe": "nghe-nghiep",
+   "loai": "nhan-vat",
+   "tenVi": "Chú lái xe",
+   "prompt": "a Vietnamese driver holding a steering wheel, wearing a cap",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/ong-nghe",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Ống nghe bác sĩ",
+   "prompt": "a doctor's stethoscope",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/do-vat/ong-nghe.png"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/nhiet-ke",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Nhiệt kế",
+   "prompt": "a medical thermometer",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/ong-tiem",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Ống tiêm",
+   "prompt": "a syringe",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/hop-cap-cuu",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Hộp cứu thương",
+   "prompt": "a white first-aid kit box with a red cross",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/mu-bao-ho-ky-su",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Mũ bảo hiểm kỹ sư xây dựng",
+   "prompt": "a yellow construction safety helmet",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/do-vat/mu-bao-ho-ky-su.png"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/may-xuc",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Máy xúc",
+   "prompt": "a yellow excavator digger",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/can-cau",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Cần cẩu",
+   "prompt": "a construction crane",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/ban-ve",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Bản vẽ và thước",
+   "prompt": "a rolled blueprint and a ruler",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/bay-xo-vua",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Bay và xô vữa",
+   "prompt": "a bricklayer trowel and a bucket",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/gach",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Chồng gạch",
+   "prompt": "a stack of red bricks",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/chao-dau-bep",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Chảo của đầu bếp",
+   "prompt": "a frying pan with a long handle",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/do-vat/chao-dau-bep.png"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/mu-dau-bep",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Mũ đầu bếp",
+   "prompt": "a tall white chef hat",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/va-muc-canh",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Vá múc canh",
+   "prompt": "a ladle and a spatula",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/liem-non-la",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Liềm và nón lá nhà nông",
+   "prompt": "a curved sickle with a wooden handle lying next to a Vietnamese conical leaf hat (non la)",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/nghe-nghiep/do-vat/liem-non-la.png"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/cuoc",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Cái cuốc",
+   "prompt": "a hoe with a wooden handle",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/bong-lua",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Bông lúa",
+   "prompt": "a bundle of golden rice stalks",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/xe-cuu-thuong",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Xe cứu thương",
+   "prompt": "a white ambulance van with a red cross, no face",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/xe-cuu-hoa",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Xe cứu hỏa",
+   "prompt": "a red fire truck, no face",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/coi-cong-an",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Còi của chú công an",
+   "prompt": "a police whistle",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/bang-phan",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Bảng và phấn",
+   "prompt": "a small blackboard with chalk",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/may-tinh",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Máy tính",
+   "prompt": "a laptop computer",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/bua-co-le",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Búa và cờ lê",
+   "prompt": "a hammer and a wrench",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/kim-chi",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Kim chỉ may",
+   "prompt": "a sewing needle with thread and a spool",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/may-anh",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Máy ảnh",
+   "prompt": "a camera",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/nha-dang-xay",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Nhà đang xây",
+   "prompt": "a house under construction with scaffolding",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/xe-ben",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Xe ben",
+   "prompt": "a yellow dump truck",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/binh-tuoi",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Bình tưới nước",
+   "prompt": "a watering can",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "nghe-nghiep/do-vat/tap-de",
+   "chuDe": "nghe-nghiep",
+   "loai": "do-vat",
+   "tenVi": "Tạp dề",
+   "prompt": "a white apron",
+   "the": [
+    "nghề nghiệp"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nen/trang-trai",
+   "chuDe": "dong-vat",
+   "loai": "nen",
+   "tenVi": "Trang trại",
+   "prompt": "a cheerful farm with a red barn, fence and green fields, NO animals",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nen/rung",
+   "chuDe": "dong-vat",
+   "loai": "nen",
+   "tenVi": "Rừng",
+   "prompt": "a lush green forest with tall trees and a path, NO animals",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nen/dai-duong",
+   "chuDe": "dong-vat",
+   "loai": "nen",
+   "tenVi": "Đại dương",
+   "prompt": "an underwater ocean scene with corals and sand, NO animals",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nhan-vat/cho",
+   "chuDe": "dong-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Con chó",
+   "prompt": "a cute puppy dog standing, wagging tail",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nhan-vat/meo",
+   "chuDe": "dong-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Con mèo",
+   "prompt": "a cute kitten cat sitting",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nhan-vat/ga",
+   "chuDe": "dong-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Con gà",
+   "prompt": "a cute rooster standing",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nhan-vat/vit",
+   "chuDe": "dong-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Con vịt",
+   "prompt": "a cute yellow duck",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nhan-vat/trau",
+   "chuDe": "dong-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Con trâu",
+   "prompt": "a cute Vietnamese water buffalo",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nhan-vat/voi",
+   "chuDe": "dong-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Con voi",
+   "prompt": "a cute elephant raising its trunk",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nhan-vat/su-tu",
+   "chuDe": "dong-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Sư tử",
+   "prompt": "a cute lion with a mane",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/nhan-vat/ca",
+   "chuDe": "dong-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Con cá",
+   "prompt": "a cute colorful fish with bubbles",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/khuc-xuong",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Khúc xương cho chó",
+   "prompt": "a dog bone treat, plain bone shape, NO face",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "da-ve",
+   "tep": "img/dong-vat/do-vat/khuc-xuong.png"
+  },
+  {
+   "id": "dong-vat/do-vat/bat-an",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Bát ăn cho thú cưng",
+   "prompt": "a pet food bowl with kibble",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/long-chim",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Lồng chim",
+   "prompt": "a bird cage, empty",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/to-chim",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Tổ chim",
+   "prompt": "a bird nest with three eggs",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/trung",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Quả trứng",
+   "prompt": "three brown chicken eggs",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/co-kho",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Cỏ khô",
+   "prompt": "a bundle of hay",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/chuong-ga",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Chuồng gà",
+   "prompt": "a wooden chicken coop, empty",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/ao-ca",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Ao cá",
+   "prompt": "a small pond with lily pads, empty of animals",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/be-ca",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Bể cá",
+   "prompt": "a fish tank with plants, empty of fish",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/chuoi",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Nải chuối",
+   "prompt": "a bunch of bananas",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/ca-rot",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Củ cà rốt",
+   "prompt": "a few carrots",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/thit",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Miếng thịt",
+   "prompt": "a piece of meat steak",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/ca-moi",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Con cá nhỏ làm mồi",
+   "prompt": "a small plain fish snack shape, no face, no eyes",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/hat-thoc",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Thóc",
+   "prompt": "a pile of rice grains",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/cay-co",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Cây cỏ",
+   "prompt": "a tuft of grass",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/dau-chan",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Dấu chân thú",
+   "prompt": "animal paw prints and hoof prints",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/long-vu",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Lông vũ",
+   "prompt": "three colorful feathers",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/cap-sung",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Cặp sừng",
+   "prompt": "a pair of horns, plain",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/vo-oc",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Vỏ ốc",
+   "prompt": "a spiral snail shell",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/mat-ong",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Hũ mật ong",
+   "prompt": "a honey jar with a honey dipper",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/chai-sua",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Chai sữa",
+   "prompt": "a glass bottle of milk",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/hang-dong",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Hang động",
+   "prompt": "a cave entrance in rocks",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/cay-rung",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Cây rừng",
+   "prompt": "a big tree",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/tang-da",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Tảng đá",
+   "prompt": "a gray rock",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/day-dat-cho",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Dây dắt chó",
+   "prompt": "a dog leash and collar",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/nha-cho",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Nhà chó",
+   "prompt": "a small wooden dog house, empty",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/khay-ve-sinh",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Khay vệ sinh mèo",
+   "prompt": "a cat litter tray",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/cuon-len",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Cuộn len",
+   "prompt": "a ball of yarn",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "dong-vat/do-vat/chuong-co",
+   "chuDe": "dong-vat",
+   "loai": "do-vat",
+   "tenVi": "Chuông cổ",
+   "prompt": "a small bell on a ribbon",
+   "the": [
+    "động vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nen/vuon-rau",
+   "chuDe": "thuc-vat",
+   "loai": "nen",
+   "tenVi": "Vườn rau",
+   "prompt": "a vegetable garden with beds of vegetables and a fence, NO people",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nen/vuon-hoa",
+   "chuDe": "thuc-vat",
+   "loai": "nen",
+   "tenVi": "Vườn hoa",
+   "prompt": "a colorful flower garden with paths, NO people",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nen/vuon-cay-an-qua",
+   "chuDe": "thuc-vat",
+   "loai": "nen",
+   "tenVi": "Vườn cây ăn quả",
+   "prompt": "an orchard with fruit trees, NO people",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nhan-vat/be-trong-cay",
+   "chuDe": "thuc-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Bé trồng cây",
+   "prompt": "a Vietnamese kid planting a seedling with a small shovel",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nhan-vat/be-tuoi-cay",
+   "chuDe": "thuc-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Bé tưới cây",
+   "prompt": "a Vietnamese kid watering plants with a watering can",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nhan-vat/be-hai-qua",
+   "chuDe": "thuc-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Bé hái quả",
+   "prompt": "a Vietnamese kid picking fruit from a tree",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nhan-vat/be-ngam-hoa",
+   "chuDe": "thuc-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Bé ngắm hoa",
+   "prompt": "a Vietnamese kid smelling a flower",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nhan-vat/be-gieo-hat",
+   "chuDe": "thuc-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Bé gieo hạt",
+   "prompt": "a Vietnamese kid sowing seeds into a pot",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nhan-vat/be-nhat-la",
+   "chuDe": "thuc-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Bé nhặt lá",
+   "prompt": "a Vietnamese kid with fallen leaves",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nhan-vat/bac-nong-dan",
+   "chuDe": "thuc-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Bác nông dân trồng rau",
+   "prompt": "a Vietnamese farmer in a conical hat tending vegetables",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/nhan-vat/be-an-trai-cay",
+   "chuDe": "thuc-vat",
+   "loai": "nhan-vat",
+   "tenVi": "Bé ăn trái cây",
+   "prompt": "a Vietnamese kid eating a slice of fruit",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/hat-dau-nay-mam",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Hạt đậu nảy mầm",
+   "prompt": "a bean seed sprouting with a small root",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/mam-cay",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Mầm cây",
+   "prompt": "a tiny seedling",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/cay-con",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Cây non",
+   "prompt": "a young plant in soil",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/cay-to",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Cây lớn",
+   "prompt": "a big tree with green crown",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/hoa-hong",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Hoa hồng",
+   "prompt": "a red rose",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/hoa-huong-duong",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Hoa hướng dương",
+   "prompt": "a sunflower",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/hoa-sen",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Hoa sen",
+   "prompt": "a pink lotus flower with leaf",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/hoa-cuc",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Hoa cúc",
+   "prompt": "a daisy flower",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/la-cay",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Lá cây",
+   "prompt": "a few green leaves",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/re-cay",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Rễ cây",
+   "prompt": "a plant with visible roots in cross-section soil",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/than-cay",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Thân cây",
+   "prompt": "a tree trunk",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/cu-ca-rot",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Củ cà rốt",
+   "prompt": "a bunch of carrots",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/rau-cai",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Rau cải",
+   "prompt": "a green leafy cabbage",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/ca-chua",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Cà chua",
+   "prompt": "red tomatoes",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/dua-leo",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Dưa leo",
+   "prompt": "cucumbers",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/bap-ngo",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Bắp ngô",
+   "prompt": "corn cobs",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/qua-chuoi",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Quả chuối",
+   "prompt": "bananas",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/tao",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Quả táo",
+   "prompt": "a red apple",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/cam",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Quả cam",
+   "prompt": "an orange",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/xoai",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Quả xoài",
+   "prompt": "a mango",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/buoi",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Quả bưởi",
+   "prompt": "a pomelo",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/dua-hau",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Dưa hấu",
+   "prompt": "a watermelon slice",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/chau-cay",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Chậu cây",
+   "prompt": "a small potted plant",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/binh-tuoi-cay",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Bình tưới",
+   "prompt": "a watering can",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/xeng-nho",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Xẻng nhỏ",
+   "prompt": "a small garden shovel",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/tui-hat-giong",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Túi hạt giống",
+   "prompt": "a packet of seeds with plain picture, no text",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "thuc-vat/do-vat/xuong-rong",
+   "chuDe": "thuc-vat",
+   "loai": "do-vat",
+   "tenVi": "Xương rồng",
+   "prompt": "a cactus in a pot",
+   "the": [
+    "thực vật"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nen/duong-pho",
+   "chuDe": "ptgt",
+   "loai": "nen",
+   "tenVi": "Đường phố",
+   "prompt": "a city street with road, crossing and traffic lights, NO vehicles, NO people",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nen/ben-xe-san-bay",
+   "chuDe": "ptgt",
+   "loai": "nen",
+   "tenVi": "Bến xe và sân bay",
+   "prompt": "an airport and bus-stop scene, NO vehicles, NO people",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nen/song-bien",
+   "chuDe": "ptgt",
+   "loai": "nen",
+   "tenVi": "Sông biển",
+   "prompt": "a river and sea harbor with a pier, NO vehicles, NO people",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nhan-vat/be-di-bo",
+   "chuDe": "ptgt",
+   "loai": "nhan-vat",
+   "tenVi": "Bé đi bộ qua đường",
+   "prompt": "a Vietnamese kid crossing at a crosswalk holding a parent's hand",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nhan-vat/be-doi-mu",
+   "chuDe": "ptgt",
+   "loai": "nhan-vat",
+   "tenVi": "Bé đội mũ bảo hiểm",
+   "prompt": "a Vietnamese kid wearing a bike helmet",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nhan-vat/chu-canh-sat",
+   "chuDe": "ptgt",
+   "loai": "nhan-vat",
+   "tenVi": "Chú cảnh sát giao thông",
+   "prompt": "a Vietnamese traffic police officer in a cream uniform directing traffic",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nhan-vat/bac-tai-xe",
+   "chuDe": "ptgt",
+   "loai": "nhan-vat",
+   "tenVi": "Bác tài xế",
+   "prompt": "a Vietnamese bus driver at the wheel",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nhan-vat/chu-phi-cong",
+   "chuDe": "ptgt",
+   "loai": "nhan-vat",
+   "tenVi": "Chú phi công",
+   "prompt": "a Vietnamese pilot in uniform and cap",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nhan-vat/chu-thuyen-truong",
+   "chuDe": "ptgt",
+   "loai": "nhan-vat",
+   "tenVi": "Chú thuyền trưởng",
+   "prompt": "a Vietnamese ship captain in white uniform and cap",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nhan-vat/be-ngoi-xe",
+   "chuDe": "ptgt",
+   "loai": "nhan-vat",
+   "tenVi": "Bé ngồi xe",
+   "prompt": "a Vietnamese kid sitting in a car seat with a seat belt",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/nhan-vat/be-dap-xe",
+   "chuDe": "ptgt",
+   "loai": "nhan-vat",
+   "tenVi": "Bé đạp xe đạp",
+   "prompt": "a Vietnamese kid riding a small bicycle with helmet",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/xe-dap",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Xe đạp",
+   "prompt": "a bicycle",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/xe-may",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Xe máy",
+   "prompt": "a motorbike",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/oto",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Ô tô con",
+   "prompt": "a small family car",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/xe-buyt",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Xe buýt",
+   "prompt": "a city bus",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/xe-tai",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Xe tải",
+   "prompt": "a truck",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/xe-cuu-thuong",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Xe cứu thương",
+   "prompt": "an ambulance",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/xe-cuu-hoa",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Xe cứu hỏa",
+   "prompt": "a fire truck",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/tau-hoa",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Tàu hỏa",
+   "prompt": "a train with carriages",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/may-bay",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Máy bay",
+   "prompt": "an airplane",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/truc-thang",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Trực thăng",
+   "prompt": "a helicopter",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/tau-thuy",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Tàu thủy",
+   "prompt": "a ship",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/thuyen",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Thuyền",
+   "prompt": "a small wooden boat",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/ca-no",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Ca nô",
+   "prompt": "a speedboat",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/khinh-khi-cau",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Khinh khí cầu",
+   "prompt": "a hot air balloon",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/xich-lo",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Xích lô",
+   "prompt": "a cyclo tricycle",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/den-giao-thong",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Đèn giao thông",
+   "prompt": "a traffic light",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/bien-cam",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Biển báo cấm",
+   "prompt": "a red circular no-entry traffic sign with a white bar, no text",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/bien-nguy-hiem",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Biển báo nguy hiểm",
+   "prompt": "a red-bordered yellow warning triangle sign, plain",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/vach-sang-duong",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Vạch sang đường",
+   "prompt": "a zebra crossing stripes",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/mu-bao-hiem",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Mũ bảo hiểm",
+   "prompt": "a motorbike helmet",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/day-an-toan",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Dây an toàn",
+   "prompt": "a car seat belt",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/banh-xe",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Bánh xe",
+   "prompt": "a wheel",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/vo-lang",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Vô lăng",
+   "prompt": "a steering wheel",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/ben-tau",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Bến tàu",
+   "prompt": "a small pier dock",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/nha-ga",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Nhà ga",
+   "prompt": "a small train station",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/cay-xang",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Cây xăng",
+   "prompt": "a petrol pump",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/cay-cau",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Cây cầu",
+   "prompt": "a bridge",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "ptgt/do-vat/xe-ben",
+   "chuDe": "ptgt",
+   "loai": "do-vat",
+   "tenVi": "Xe ben",
+   "prompt": "a dump truck",
+   "the": [
+    "phương tiện giao thông"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nen/troi-mua",
+   "chuDe": "httn",
+   "loai": "nen",
+   "tenVi": "Trời mưa",
+   "prompt": "a rainy day landscape with clouds and puddles, NO people",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nen/bo-bien",
+   "chuDe": "httn",
+   "loai": "nen",
+   "tenVi": "Bờ biển",
+   "prompt": "a sunny beach with waves and sand, NO people",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nen/nui-song",
+   "chuDe": "httn",
+   "loai": "nen",
+   "tenVi": "Núi và sông",
+   "prompt": "mountains with a river and waterfall, NO people",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nhan-vat/be-di-mua",
+   "chuDe": "httn",
+   "loai": "nhan-vat",
+   "tenVi": "Bé che ô đi mưa",
+   "prompt": "a Vietnamese kid with a raincoat and umbrella in the rain",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nhan-vat/be-choi-nuoc",
+   "chuDe": "httn",
+   "loai": "nhan-vat",
+   "tenVi": "Bé chơi nước",
+   "prompt": "a Vietnamese kid splashing in a puddle in rain boots",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nhan-vat/be-di-nang",
+   "chuDe": "httn",
+   "loai": "nhan-vat",
+   "tenVi": "Bé đội mũ đi nắng",
+   "prompt": "a Vietnamese kid in a sun hat on a sunny day",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nhan-vat/be-ao-am",
+   "chuDe": "httn",
+   "loai": "nhan-vat",
+   "tenVi": "Bé mặc áo ấm",
+   "prompt": "a Vietnamese kid in a warm coat and scarf in cold weather",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nhan-vat/be-thoi-bong",
+   "chuDe": "httn",
+   "loai": "nhan-vat",
+   "tenVi": "Bé thổi bong bóng",
+   "prompt": "a Vietnamese kid blowing soap bubbles",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nhan-vat/be-uong-nuoc",
+   "chuDe": "httn",
+   "loai": "nhan-vat",
+   "tenVi": "Bé uống nước",
+   "prompt": "a Vietnamese kid drinking from a cup",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nhan-vat/be-tat-voi",
+   "chuDe": "httn",
+   "loai": "nhan-vat",
+   "tenVi": "Bé tắt vòi nước",
+   "prompt": "a Vietnamese kid turning off a tap",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/nhan-vat/be-tha-dieu",
+   "chuDe": "httn",
+   "loai": "nhan-vat",
+   "tenVi": "Bé thả diều",
+   "prompt": "a Vietnamese kid flying a kite",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/giot-nuoc",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Giọt nước",
+   "prompt": "a single blue water drop shape (object, no face)",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/dam-may",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Đám mây",
+   "prompt": "a fluffy white cloud",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/may-mua",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Mây mưa",
+   "prompt": "a gray rain cloud with rain drops",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/mat-troi",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Mặt trời",
+   "prompt": "a bright sun with rays (no face)",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/cau-vong",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Cầu vồng",
+   "prompt": "a rainbow",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/tia-set",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Tia chớp",
+   "prompt": "a lightning bolt",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/gio-la-bay",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Gió và lá bay",
+   "prompt": "wind swirl lines with flying leaves",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/bong-tuyet",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Bông tuyết",
+   "prompt": "a snowflake",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/trang-sao",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Mặt trăng và sao",
+   "prompt": "a crescent moon with stars",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/song-bien",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Sóng biển",
+   "prompt": "ocean waves",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/suoi",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Dòng suối",
+   "prompt": "a small stream with rocks",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/thac-nuoc",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Thác nước",
+   "prompt": "a waterfall",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/hat-suong",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Hạt sương",
+   "prompt": "dew drops on a leaf",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/o-du",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Cái ô",
+   "prompt": "a colorful umbrella",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/ao-mua",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Áo mưa",
+   "prompt": "a raincoat with hood",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/ung",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Ủng đi mưa",
+   "prompt": "a pair of rain boots",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/nhiet-ke-ngoai-troi",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Nhiệt kế ngoài trời",
+   "prompt": "a thermometer on a board",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/xo-nuoc",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Xô nước",
+   "prompt": "a bucket of water",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/voi-nuoc",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Vòi nước",
+   "prompt": "a water tap with a drop",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/coc-nuoc",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Cốc nước",
+   "prompt": "a glass of water",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/chai-nuoc",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Chai nước",
+   "prompt": "a bottle of water",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/noi-nuoc-soi",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Nồi nước sôi",
+   "prompt": "a pot with steam",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/vien-da",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Viên đá",
+   "prompt": "ice cubes",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/bai-cat",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Bãi cát",
+   "prompt": "a pile of sand with a bucket and spade",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/vo-so",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Vỏ sò",
+   "prompt": "a seashell",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/dieu",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Cánh diều",
+   "prompt": "a kite",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/chong-chong",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Chong chóng",
+   "prompt": "a pinwheel",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "httn/do-vat/bong-bong-xa-phong",
+   "chuDe": "httn",
+   "loai": "do-vat",
+   "tenVi": "Bong bóng xà phòng",
+   "prompt": "soap bubbles",
+   "the": [
+    "nước và hiện tượng tự nhiên"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nen/nha-san",
+   "chuDe": "bh-qh",
+   "loai": "nen",
+   "tenVi": "Nhà sàn Bác Hồ",
+   "prompt": "the Vietnamese stilt house of Uncle Ho with garden and pond, NO people",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nen/lang-que",
+   "chuDe": "bh-qh",
+   "loai": "nen",
+   "tenVi": "Làng quê",
+   "prompt": "a Vietnamese countryside village with bamboo, pond and rice fields, NO people",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nen/ho-guom",
+   "chuDe": "bh-qh",
+   "loai": "nen",
+   "tenVi": "Hồ Gươm",
+   "prompt": "Hoan Kiem lake with the red Huc bridge and Turtle Tower, NO people",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nhan-vat/bac-ho",
+   "chuDe": "bh-qh",
+   "loai": "nhan-vat",
+   "tenVi": "Bác Hồ",
+   "prompt": "a kind elderly Vietnamese leader with a thin white beard in a simple khaki suit, gentle smile, respectful illustration",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nhan-vat/be-chao-bac",
+   "chuDe": "bh-qh",
+   "loai": "nhan-vat",
+   "tenVi": "Bé chào Bác",
+   "prompt": "a Vietnamese kid with a red neckerchief saluting",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nhan-vat/be-mua",
+   "chuDe": "bh-qh",
+   "loai": "nhan-vat",
+   "tenVi": "Bé múa",
+   "prompt": "a Vietnamese kid in a traditional ao dai dancing",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nhan-vat/be-ao-dai",
+   "chuDe": "bh-qh",
+   "loai": "nhan-vat",
+   "tenVi": "Bé mặc áo dài",
+   "prompt": "a Vietnamese girl in a pink ao dai",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nhan-vat/be-ao-ba-ba",
+   "chuDe": "bh-qh",
+   "loai": "nhan-vat",
+   "tenVi": "Bé mặc áo bà ba",
+   "prompt": "a Vietnamese kid in a brown ao ba ba and conical hat",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nhan-vat/be-cam-co",
+   "chuDe": "bh-qh",
+   "loai": "nhan-vat",
+   "tenVi": "Bé cầm cờ",
+   "prompt": "a Vietnamese kid holding the Vietnamese flag",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nhan-vat/be-khan-do",
+   "chuDe": "bh-qh",
+   "loai": "nhan-vat",
+   "tenVi": "Bé quàng khăn đỏ",
+   "prompt": "a Vietnamese kid with a red scarf",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/nhan-vat/cac-be-hat-mua",
+   "chuDe": "bh-qh",
+   "loai": "nhan-vat",
+   "tenVi": "Các bé hát múa",
+   "prompt": "a group of Vietnamese kids singing and dancing",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/co-do-sao-vang",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Cờ đỏ sao vàng",
+   "prompt": "the Vietnamese flag: red field with a yellow star",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/nha-san-nho",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Nhà sàn nhỏ",
+   "prompt": "a small stilt house",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/ao-dai",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Áo dài",
+   "prompt": "a Vietnamese ao dai dress",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/non-la",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Nón lá",
+   "prompt": "a conical hat",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/chua-mot-cot",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Chùa Một Cột",
+   "prompt": "the One Pillar Pagoda of Hanoi",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/lang-bac",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Lăng Bác",
+   "prompt": "Ho Chi Minh mausoleum building",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/thap-rua",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Tháp Rùa",
+   "prompt": "Turtle Tower on the lake",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/cau-the-huc",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Cầu Thê Húc",
+   "prompt": "the red Huc bridge",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/hoa-sen",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Hoa sen",
+   "prompt": "a lotus flower",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/trong-dong",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Trống đồng",
+   "prompt": "a bronze drum with sun pattern",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/banh-chung",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Bánh chưng",
+   "prompt": "a square green banh chung rice cake tied with string",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/banh-giay",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Bánh giầy",
+   "prompt": "a round white banh giay rice cake",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/mam-ngu-qua",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Mâm ngũ quả",
+   "prompt": "a five-fruit tray for Tet",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/dan-bau",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Đàn bầu",
+   "prompt": "a Vietnamese monochord dan bau",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/sao-truc",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Sáo trúc",
+   "prompt": "a bamboo flute",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/gieng-lang",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Giếng làng",
+   "prompt": "a village well",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/cay-da",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Cây đa",
+   "prompt": "a banyan tree",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/canh-dong-lua",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Cánh đồng lúa",
+   "prompt": "a rice paddy patch",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/cai-cay",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Cái cày",
+   "prompt": "a wooden plough",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/thuyen-thung",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Thuyền thúng",
+   "prompt": "a round basket boat",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/cau-tre",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Cây cầu tre",
+   "prompt": "a bamboo bridge",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/den-long-hoi-an",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Đèn lồng Hội An",
+   "prompt": "colorful silk lanterns",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/khan-quang-do",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Khăn quàng đỏ",
+   "prompt": "a red neckerchief",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/hoa-dao",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Hoa đào",
+   "prompt": "peach blossoms",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/hoa-mai",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Hoa mai",
+   "prompt": "yellow apricot blossoms",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/bo-am-tra",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Bộ ấm trà",
+   "prompt": "a tea set with a teapot",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/bo-hoa",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Bó hoa dâng Bác",
+   "prompt": "a bouquet of flowers",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "bh-qh/do-vat/sach-bia-do",
+   "chuDe": "bh-qh",
+   "loai": "do-vat",
+   "tenVi": "Quyển sách bìa đỏ",
+   "prompt": "a book with a red cover, no text",
+   "the": [
+    "bác hồ - quê hương bé"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nen/lop-1",
+   "chuDe": "truong-th",
+   "loai": "nen",
+   "tenVi": "Lớp 1",
+   "prompt": "a primary school classroom with desks and a green board, NO people",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nen/san-truong-th",
+   "chuDe": "truong-th",
+   "loai": "nen",
+   "tenVi": "Sân trường tiểu học",
+   "prompt": "a primary school yard with a flagpole and building, NO people",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nen/thu-vien",
+   "chuDe": "truong-th",
+   "loai": "nen",
+   "tenVi": "Thư viện",
+   "prompt": "a school library with bookshelves and reading tables, NO people",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nhan-vat/hoc-sinh-nam",
+   "chuDe": "truong-th",
+   "loai": "nhan-vat",
+   "tenVi": "Học sinh nam lớp 1",
+   "prompt": "a Vietnamese boy 6 years old in school uniform with red neckerchief and backpack",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nhan-vat/hoc-sinh-nu",
+   "chuDe": "truong-th",
+   "loai": "nhan-vat",
+   "tenVi": "Học sinh nữ lớp 1",
+   "prompt": "a Vietnamese girl 6 years old in school uniform with red neckerchief and backpack",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nhan-vat/co-giao-tieu-hoc",
+   "chuDe": "truong-th",
+   "loai": "nhan-vat",
+   "tenVi": "Cô giáo tiểu học",
+   "prompt": "a Vietnamese primary school teacher woman in an ao dai or blouse with a pointer",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nhan-vat/thay-giao",
+   "chuDe": "truong-th",
+   "loai": "nhan-vat",
+   "tenVi": "Thầy giáo",
+   "prompt": "a Vietnamese male teacher in a shirt holding a book",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nhan-vat/be-di-hoc",
+   "chuDe": "truong-th",
+   "loai": "nhan-vat",
+   "tenVi": "Bé đi học",
+   "prompt": "a Vietnamese kid walking to school with a backpack",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nhan-vat/be-doc-sach",
+   "chuDe": "truong-th",
+   "loai": "nhan-vat",
+   "tenVi": "Bé đọc sách",
+   "prompt": "a Vietnamese kid reading a book",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nhan-vat/be-viet-bai",
+   "chuDe": "truong-th",
+   "loai": "nhan-vat",
+   "tenVi": "Bé viết bài",
+   "prompt": "a Vietnamese kid writing at a desk",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/nhan-vat/be-gio-tay",
+   "chuDe": "truong-th",
+   "loai": "nhan-vat",
+   "tenVi": "Bé giơ tay phát biểu",
+   "prompt": "a Vietnamese kid raising a hand",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/cap-sach-lop-1",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Cặp sách lớp 1",
+   "prompt": "a school backpack",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/hop-but",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Hộp bút",
+   "prompt": "a pencil case",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/vo-viet",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Quyển vở",
+   "prompt": "a notebook with a ruled cover, no text",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/but-muc",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Bút mực",
+   "prompt": "a fountain pen",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/thuoc-ke",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Thước kẻ",
+   "prompt": "a ruler, no numbers",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/cuc-tay",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Cục tẩy",
+   "prompt": "an eraser",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/got-but-chi",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Gọt bút chì",
+   "prompt": "a pencil sharpener",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/but-chi",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Bút chì",
+   "prompt": "pencils",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/sach-giao-khoa",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Sách giáo khoa",
+   "prompt": "a stack of textbooks, no text",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/bang-den",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Bảng đen",
+   "prompt": "a classroom chalkboard",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/ban-hoc",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Bàn học",
+   "prompt": "a student desk with chair",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/trong-truong",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Trống trường",
+   "prompt": "a school drum",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/chuong-tieu-hoc",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Chuông trường",
+   "prompt": "a school bell",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/cot-co",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Cột cờ",
+   "prompt": "a flagpole with the Vietnamese flag",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/khan-quang-do",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Khăn quàng đỏ",
+   "prompt": "a red neckerchief",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/dong-phuc",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Đồng phục",
+   "prompt": "a school uniform, shirt and shorts",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/giay-hoc-sinh",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Giày học sinh",
+   "prompt": "school shoes",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/binh-nuoc",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Bình nước",
+   "prompt": "a kids water bottle",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/hop-com",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Hộp cơm",
+   "prompt": "a lunch box",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/ba-lo",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Ba lô",
+   "prompt": "a backpack",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/gia-sach",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Giá sách",
+   "prompt": "a bookshelf with books",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/ban-do",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Bản đồ Việt Nam",
+   "prompt": "a map of Vietnam, no text",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/qua-dia-cau",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Quả địa cầu",
+   "prompt": "a globe",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/kinh-lup",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Kính lúp",
+   "prompt": "a magnifying glass",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/dong-ho",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Đồng hồ",
+   "prompt": "a clock",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/giay-khen",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Giấy khen",
+   "prompt": "a certificate with a ribbon, blank",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/hoa-diem-muoi",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Bông hoa điểm mười",
+   "prompt": "a red flower rosette",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/the-ten",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Thẻ tên",
+   "prompt": "a blank name tag with a string",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  },
+  {
+   "id": "truong-th/do-vat/cong-truong",
+   "chuDe": "truong-th",
+   "loai": "do-vat",
+   "tenVi": "Cổng trường tiểu học",
+   "prompt": "a primary school gate",
+   "the": [
+    "trường tiểu học"
+   ],
+   "trangThai": "chua-ve"
+  }
+ ]
+}
